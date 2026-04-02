@@ -1,0 +1,14 @@
+{
+  "name": "claude-flow-memory-db",
+  "version": "1.0.0",
+  "description": "AgentDB with HNSW vector search for Claude Code session memory",
+  "private": true,
+  "scripts": {
+    "setup": "node setup.js",
+    "search": "node search.js",
+    "ingest": "node ingest.js --all"
+  },
+  "dependencies": {
+    "sql.js": "^1.10.0"
+  }
+}
