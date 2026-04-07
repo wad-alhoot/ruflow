@@ -703,6 +703,68 @@ npx claude-flow@v3alpha hooks worker dispatch --trigger audit
 npx claude-flow@v3alpha hooks worker status
 ```
 
+## Session-to-Vector-DB Persistence
+
+Every session is automatically connected to dual vector databases via hooks. No manual action needed.
+
+### How It Works
+
+| Hook | Script | Action |
+|------|--------|--------|
+| `SessionStart` | `session-vectordb.cjs start` | Connects to SQLite AgentDB + MCP HNSW, loads last session context |
+| `SessionEnd` | `session-vectordb.cjs save` | Saves full session transcript to both vector DBs |
+| `Stop` | `session-vectordb.cjs save` | Final save on exit (backup if SessionEnd missed) |
+| `Stop` | `session-memory-hook.sh` | Extracts .jsonl → markdown summary → MEMORY.md index |
+
+### Dual Vector Database Architecture
+
+| Database | Location | Search Method | Use Case |
+|----------|----------|---------------|----------|
+| **SQLite AgentDB** | `memory/agentdb.sqlite` | TF-IDF + cosine similarity | Local persistent search, offline access |
+| **MCP HNSW** | In-memory (384-dim embeddings) | Semantic vector search (150x-12,500x faster) | Live session queries via MCP tools |
+
+### What Gets Stored Per Session
+
+- User messages (topics discussed)
+- Assistant responses (key decisions)
+- Files created/modified
+- Commands run
+- Session metadata (model, branch, message count)
+- Full-text chunks indexed for search
+
+### Manual Operations
+
+```bash
+# Ingest a specific session file into AgentDB
+node scripts/memory-db/ingest.js --session <path-to-jsonl>
+
+# Ingest a memory markdown file
+node scripts/memory-db/ingest.js --file <path-to-md>
+
+# Re-ingest everything (full rebuild)
+node scripts/memory-db/ingest.js --all
+
+# Search AgentDB
+node scripts/memory-db/search.js "authentication patterns"
+
+# Store to MCP vector DB (during live session)
+# Use mcp__claude-flow__memory_store with namespace "sessions"
+
+# Search MCP vector DB (during live session)
+# Use mcp__claude-flow__memory_search with query
+```
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `.claude/helpers/session-vectordb.cjs` | Hook script: connects/saves sessions to vector DBs |
+| `scripts/session-memory-hook.sh` | Hook script: extracts .jsonl → markdown summaries |
+| `scripts/memory-db/ingest.js` | Ingests files into SQLite AgentDB |
+| `scripts/memory-db/lib.js` | Shared library: TF-IDF, chunking, cosine similarity |
+| `scripts/memory-db/search.js` | Search the SQLite AgentDB |
+| `scripts/memory-db/setup.js` | Initialize/reset the AgentDB schema |
+
 ## Intelligence System (RuVector)
 
 V3 includes the RuVector Intelligence System:
