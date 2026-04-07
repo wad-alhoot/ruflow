@@ -561,6 +561,8 @@
 - terraform-skill
 - terraform-specialist
 - turborepo-caching
+- vercel-ai-sdk-expert
+- vercel-automation
 - vercel-deployment
 
 
@@ -922,7 +924,7 @@
 - zoom-automation
 
 
-## Design and UI (39 skills)
+## Design and UI (40 skills)
 
 - algorithmic-art
 - antigravity-design-expert
@@ -961,6 +963,7 @@
 - theme-factory
 - ui-ux-designer
 - ui-ux-pro-max
+- ui-visual-validator
 - uxui-principles
 - vizcom
 
@@ -1598,7 +1601,7 @@
 - yes-md
 
 
-## Other/Specialized (60 skills)
+## Other/Specialized (65 skills)
 
 - akf-trust-metadata
 - api-testing-observability-api-mock
