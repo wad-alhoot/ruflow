@@ -7,7 +7,7 @@ source: community
 date_added: "2025-03-08"
 author: amalsam18
 tags: [playwright, java, e2e-testing, junit5, page-object-model, allure, selenium-alternative]
-tools: [claude, cursor,antigravity]
+tools: [claude, cursor,claude-code]
 ---
 
 # Playwright Java – Advanced Test Automation

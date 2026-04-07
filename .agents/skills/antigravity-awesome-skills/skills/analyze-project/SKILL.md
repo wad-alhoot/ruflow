@@ -1,6 +1,6 @@
 ---
 name: analyze-project
-description: Forensic root cause analyzer for Antigravity sessions. Classifies scope deltas, rework patterns, root causes, hotspots, and auto-improves prompts/health.
+description: Forensic root cause analyzer for Claude Code sessions. Classifies scope deltas, rework patterns, root causes, hotspots, and auto-improves prompts/health.
 risk: unknown
 source: community
 version: "1.0"
@@ -9,7 +9,7 @@ tags: [analysis, diagnostics, meta, root-cause, project-health, session-review]
 
 # /analyze-project — Root Cause Analyst Workflow
 
-Analyze AI-assisted coding sessions in `~/.gemini/antigravity/brain/` and produce a report that explains not just **what happened**, but **why it happened**, **who/what caused it**, and **what should change next time**.
+Analyze AI-assisted coding sessions in `~/.gemini/claude-code/brain/` and produce a report that explains not just **what happened**, but **why it happened**, **who/what caused it**, and **what should change next time**.
 
 ## Goal
 
@@ -65,7 +65,7 @@ Do not judge exploratory or research sessions by the same standards as narrow de
 ## Step 1: Discover Conversations
 
 1. Read available conversation summaries from system context
-2. List conversation folders in the user’s Antigravity `brain/` directory
+2. List conversation folders in the user’s Claude Code `brain/` directory
 3. Build a conversation index with:
    - `conversation_id`
    - `title`

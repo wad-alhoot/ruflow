@@ -7,7 +7,7 @@ source: community
 date_added: "2026-03-13"
 author: christopherlhammer11-ai
 tags: [memory, context, rag, summarization, compression, long-context, agent-infrastructure]
-tools: [claude, cursor, codex, gemini, copilot, windsurf, antigravity, grok]
+tools: [claude, cursor, codex, gemini, copilot, windsurf, claude-code, grok]
 ---
 
 # RecallMax — God-Tier Long-Context Memory

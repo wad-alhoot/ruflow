@@ -1,12 +1,12 @@
 ---
-name: antigravity-workflows
-description: "Orchestrate multiple Antigravity skills through guided workflows for SaaS MVP delivery, security audits, AI agent builds, and browser QA."
+name: claude-code-workflows
+description: "Orchestrate multiple Claude Code skills through guided workflows for SaaS MVP delivery, security audits, AI agent builds, and browser QA."
 risk: none
 source: self
 date_added: "2026-02-27"
 ---
 
-# Antigravity Workflows
+# Claude Code Workflows
 
 Use this skill to turn a complex objective into a guided sequence of skill invocations.
 
@@ -52,23 +52,23 @@ Read workflows in this order:
 ## Copy-Paste Prompts
 
 ```text
-Use @antigravity-workflows to run the "Ship a SaaS MVP" workflow for my project idea.
+Use @claude-code-workflows to run the "Ship a SaaS MVP" workflow for my project idea.
 ```
 
 ```text
-Use @antigravity-workflows and execute a full "Security Audit for a Web App" workflow.
+Use @claude-code-workflows and execute a full "Security Audit for a Web App" workflow.
 ```
 
 ```text
-Use @antigravity-workflows to guide me through "Build an AI Agent System" with checkpoints.
+Use @claude-code-workflows to guide me through "Build an AI Agent System" with checkpoints.
 ```
 
 ```text
-Use @antigravity-workflows to execute the "QA and Browser Automation" workflow and stabilize flaky tests.
+Use @claude-code-workflows to execute the "QA and Browser Automation" workflow and stabilize flaky tests.
 ```
 
 ```text
-Use @antigravity-workflows to execute the "Design a DDD Core Domain" workflow for my new service.
+Use @claude-code-workflows to execute the "Design a DDD Core Domain" workflow for my new service.
 ```
 
 ## Limitations

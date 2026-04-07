@@ -13,7 +13,7 @@ tags:
 - pytorch
 tools:
 - claude-code
-- antigravity
+- claude-code
 - cursor
 - gemini-cli
 - codex-cli

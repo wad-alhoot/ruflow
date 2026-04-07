@@ -18,7 +18,7 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
-- antigravity
+- claude-code
 ---
 
 # GDB Debugging Assistant

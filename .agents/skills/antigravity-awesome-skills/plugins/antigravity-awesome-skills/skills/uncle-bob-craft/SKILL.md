@@ -5,7 +5,7 @@ category: code-quality
 risk: safe
 source: community
 date_added: "2026-03-06"
-author: antigravity-contributors
+author: claude-code-contributors
 tags: [clean-code, clean-architecture, solid, code-review, craftsmanship, uncle-bob]
 tools: [claude, cursor, gemini]
 ---
