@@ -1269,7 +1269,7 @@
 - vibers-code-review
 
 
-## Context and Memory (18 skills)
+## Context and Memory (17 skills)
 
 - claude-mem
 - context-agent
@@ -1464,7 +1464,7 @@
 - matematico-tao
 
 
-## Claude Code and Ruflo Platform (125 skills)
+## Claude Code and Ruflo Platform (123 skills)
 
 - 00-andruia-consultant
 - 007
@@ -1659,10 +1659,13 @@
 - progressive-estimation
 - pptx
 - python-pptx-generator
+- readme
+- README.md
 - reference-builder
 - reverse-engineer
 - sam-altman
 - sankhya-dashboard-html-jsp-custom-best-pratices
+- screenshots
 - search-specialist
 - security
 - seek-and-analyze-video
@@ -1679,4 +1682,6 @@
 - videodb-skills
 - visual-emotion-engineer
 - warren-buffett
+- workflow- bundlesREADME.md
+- workflow_bundles_readme.md
 - xlsx
