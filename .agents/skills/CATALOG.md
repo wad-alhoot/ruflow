@@ -6,7 +6,7 @@
 ---
 
 
-## AI/ML and Agent Development (166 skills)
+## AI/ML and Agent Development (186 skills)
 
 - agent-adaptive-coordinator
 - agent-agent
@@ -196,7 +196,7 @@
 - yann-lecun-tecnico
 
 
-## Azure Cloud Services (120 skills)
+## Azure Cloud Services (121 skills)
 
 - azd-deployment
 - azure-ai-agents-persistent-dotnet
@@ -484,7 +484,7 @@
 - zod-validation-expert
 
 
-## Database (27 skills)
+## Database (28 skills)
 
 - algolia-search
 - claimable-postgres
@@ -704,7 +704,7 @@
 - using-git-worktrees
 
 
-## SEO and Marketing (99 skills)
+## SEO and Marketing (101 skills)
 
 - ad-creative
 - ai-seo
@@ -809,7 +809,7 @@
 - youtube-summarizer
 
 
-## Automation and Integration (104 skills)
+## Automation and Integration (111 skills)
 
 - activecampaign-automation
 - airflow-dag-patterns
@@ -1464,7 +1464,7 @@
 - matematico-tao
 
 
-## Claude Code and Ruflo Platform (123 skills)
+## Claude Code and Ruflo Platform (133 skills)
 
 - 00-andruia-consultant
 - 007
@@ -1601,7 +1601,7 @@
 - yes-md
 
 
-## Other/Specialized (65 skills)
+## Other/Specialized (82 skills)
 
 - akf-trust-metadata
 - api-testing-observability-api-mock
