@@ -4,6 +4,26 @@
 > 5,900+ commits, 55 alpha iterations, 259 MCP tools, 60+ agents, 8 AgentDB controllers.
 > Packages: `@claude-flow/cli@3.5.0`, `claude-flow@3.5.0`, `ruflo@3.5.0`
 
+## Always-On Pipeline (Run Before Answering Any Non-Trivial Prompt)
+
+Before answering anything beyond a greeting or yes/no, do these in parallel in ONE message:
+
+1. **Memory recall** — search `data/memory/agentdb.sqlite` for relevant prior context:
+   `node scripts/memory-db/search.js "<keywords from user prompt>"`
+2. **Graphify lookup** — if the question touches architecture, code structure, or a specific module, read `graphify-out/wiki/index.md` first and drill into the relevant community article (`graphify-out/wiki/Community_*.md`). Never grep raw files when the wiki has the answer.
+3. **Skill match** — the user's prompt is auto-routed by the `UserPromptSubmit` hook (`[INTELLIGENCE]` + `[INFO] Routing task` lines). Honor the primary recommendation unless clearly wrong. For `/skill-name`, invoke `Skill` tool immediately.
+4. **Vector memory (MCP)** — use `mcp__claude-flow__memory_search` with the user's keywords for live session recall (namespace: `sessions`, `patterns`).
+5. **Task tracking** — any multi-step work → create `TaskCreate` todos up-front, update status as you go.
+
+**Always-available infrastructure (don't spawn a new instance — use what's already loaded):**
+- 1,340 skills indexed in ruflow-ui (see `MEMORY.md` → `skills_antigravity.md`)
+- 135 agents, 40 categories in skills catalog
+- Dual vector DB: SQLite AgentDB (local) + MCP HNSW (semantic, 384-dim, 150x-12,500x faster)
+- Graphify knowledge graph: 2094 nodes, 4539 edges, 42 communities, 63 wiki articles
+- Karpathy coding principles (see section below) — apply every change
+
+**When to skip the pipeline:** greetings, single-word confirmations ("ok", "thanks"), or when the user explicitly says "just answer".
+
 ## Behavioral Rules (Always Enforced)
 
 - Do what has been asked; nothing more, nothing less

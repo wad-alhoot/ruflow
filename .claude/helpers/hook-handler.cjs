@@ -92,6 +92,7 @@ const handlers = {
       output.push('| Reason: ' + result.reason.substring(0, 53).padEnd(53) + '|');
       output.push('+--------------------------------------------------------------+');
       console.log(output.join('\n'));
+      if (karpathy && karpathy.onRoute) { var kg = karpathy.onRoute(prompt); if (kg) console.log(kg); }
     } else {
       console.log('[INFO] Router not available, using default routing');
     }
@@ -114,6 +115,7 @@ const handlers = {
   },
 
   'post-edit': () => {
+    if (karpathy && karpathy.onPostEdit) { var kg = karpathy.onPostEdit(process.env.CLAUDE_FILE || ''); if (kg) console.log(kg); }
     if (session && session.metric) {
       try { session.metric('edits'); } catch (e) { /* no active session */ }
     }
@@ -170,6 +172,7 @@ const handlers = {
   },
 
   'pre-task': () => {
+    if (karpathy && karpathy.onPreTask) { var kg = karpathy.onPreTask(prompt); if (kg) console.log(kg); }
     if (session && session.metric) {
       try { session.metric('tasks'); } catch (e) { /* no active session */ }
     }
@@ -186,6 +189,7 @@ const handlers = {
   },
 
   'post-task': () => {
+    if (karpathy && karpathy.onPostTask) { var kg = karpathy.onPostTask(true); if (kg) console.log(kg); }
     if (intelligence && intelligence.feedback) {
       try {
         intelligence.feedback(true);

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ruflow Chat - Web interface for Claude Code AI assistant">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <title>Ruflow Chat</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include marked.js for markdown rendering from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Include highlight.js for code syntax highlighting from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+  <!-- DOMPurify for XSS prevention -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+</head>
+<body>
+  <noscript><div style="padding:20px;text-align:center;color:#e6edf3;background:#0d1117;height:100vh;display:flex;align-items:center;justify-content:center;">JavaScript is required to use Ruflow Chat.</div></noscript>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-ruflow">Ruflow</span><span class="logo-chat">Chat</span>
+        <span id="connection-status" class="connection-dot connected" title="Connected"></span>
+      </div>
+
+      <button id="new-chat-btn" class="new-chat-btn" aria-label="New chat">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>New Chat</span>
+      </button>
+
+      <div class="sidebar-search">
+        <input id="session-search" type="text" placeholder="Search sessions..." aria-label="Search sessions" />
+      </div>
+
+      <div class="session-sort">
+        <select id="session-sort" aria-label="Sort sessions">
+          <option value="recent">Recent</option>
+          <option value="name">Name A-Z</option>
+          <option value="messages">Most messages</option>
+          <option value="oldest">Oldest first</option>
+        </select>
+      </div>
+
+      <div id="session-list" class="session-list">
+        <!-- Session items are rendered dynamically -->
+      </div>
+
+      <button id="collapse-btn" class="collapse-btn" aria-label="Collapse sidebar">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </aside>
+
+    <!-- Main Area -->
+    <div id="main">
+      <!-- Top Bar -->
+      <header id="top-bar">
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle sidebar">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <button id="sidebar-toggle-btn" class="sidebar-toggle-btn" aria-label="Toggle sidebar">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <span id="session-name" class="session-name" contenteditable="true" spellcheck="false" aria-label="Session name">New Chat</span>
+
+        <span id="context-indicator" class="context-indicator">New session</span>
+
+        <div class="top-bar-right">
+          <button id="system-prompt-btn" class="settings-btn" aria-label="System prompt" title="Edit system prompt">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 16v-4M12 8h.01"/></svg>
+          </button>
+          <div class="zoom-controls">
+            <button class="zoom-btn" id="zoom-out-btn" title="Decrease font size">A-</button>
+            <button class="zoom-btn" id="zoom-in-btn" title="Increase font size">A+</button>
+          </div>
+          <select id="model-selector" class="model-selector" aria-label="Select model">
+            <option value="sonnet">Sonnet</option>
+            <option value="opus">Opus</option>
+            <option value="haiku">Haiku</option>
+          </select>
+
+          <button id="cancel-btn" class="cancel-btn" aria-label="Cancel generation" style="display: none;">
+            <svg width="14" height="14" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="12" height="12" rx="2" fill="currentColor"/>
+            </svg>
+            <span>Stop</span>
+          </button>
+
+          <button id="theme-toggle-btn" class="settings-btn" aria-label="Toggle theme" title="Toggle light/dark theme">
+            <svg id="theme-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <circle cx="9" cy="9" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M9 1v2M9 15v2M1 9h2M15 9h2M3.05 3.05l1.41 1.41M13.54 13.54l1.41 1.41M3.05 14.95l1.41-1.41M13.54 4.46l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <button id="settings-btn" class="settings-btn" aria-label="Export session" title="Export session as markdown">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- System Prompt Panel -->
+      <div id="system-prompt-panel" class="system-prompt-panel">
+        <div class="system-prompt-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 16v-4M12 8h.01"/></svg>
+          System Prompt (prepended to every message)
+        </div>
+        <textarea id="system-prompt-input" placeholder="Enter a system prompt..."></textarea>
+      </div>
+
+      <!-- Tool Progress Breadcrumb -->
+      <div id="tool-breadcrumb" class="tool-breadcrumb"></div>
+
+      <!-- Chat Messages Area -->
+      <div id="chat-messages">
+        <div id="chat-search-bar" class="chat-search-bar">
+          <input id="chat-search-input" type="text" placeholder="Search in chat..." />
+          <span class="search-count" id="search-count"></span>
+          <button id="search-prev-btn" aria-label="Previous match">&uarr;</button>
+          <button id="search-next-btn" aria-label="Next match">&darr;</button>
+          <button id="search-close-btn" aria-label="Close search">&times;</button>
+        </div>
+        <div id="welcome-screen" class="welcome-screen">
+          <div class="welcome-logo">⚡</div>
+          <h1>Ruflow <span class="welcome-accent">Chat</span></h1>
+          <p>Your AI coding assistant — powered by Claude Code</p>
+          <div class="welcome-actions">
+            <button class="welcome-btn" data-prompt="Help me write a function that ">
+              <span class="welcome-btn-icon">💻</span>Start coding
+            </button>
+            <button class="welcome-btn" data-prompt="Review this code for bugs and improvements:\n\n">
+              <span class="welcome-btn-icon">🔍</span>Review code
+            </button>
+            <button class="welcome-btn" data-prompt="I have a bug: ">
+              <span class="welcome-btn-icon">🐛</span>Debug issue
+            </button>
+            <button class="welcome-btn" data-prompt="Explain how this works:\n\n">
+              <span class="welcome-btn-icon">📖</span>Explain code
+            </button>
+          </div>
+          <div class="welcome-hint">
+            <kbd>Ctrl+K</kbd> Command palette · <kbd>Ctrl+N</kbd> New chat · <kbd>/</kbd> Slash commands
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <div id="input-area">
+        <div id="slash-menu" class="slash-menu"></div>
+        <div id="file-preview" class="file-preview">
+          <!-- File preview items rendered dynamically -->
+        </div>
+
+        <div class="input-wrapper">
+          <button id="attach-btn" class="input-btn attach-btn" aria-label="Attach file">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M15.12 8.53l-5.66 5.66a4 4 0 01-5.66-5.66l5.66-5.66a2.67 2.67 0 013.77 3.77l-5.65 5.65a1.33 1.33 0 01-1.89-1.88l5.66-5.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <textarea
+            id="message-input"
+            rows="1"
+            placeholder="Ask Claude anything... (Shift+Enter for new line)"
+            aria-label="Message input"
+          ></textarea>
+
+          <button id="mic-btn" class="input-btn mic-btn" aria-label="Voice input">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <rect x="6" y="1" width="6" height="10" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M3 8a6 6 0 0012 0M9 14v3M6 17h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <button id="send-btn" class="input-btn send-btn" aria-label="Send message" disabled>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <circle cx="9" cy="9" r="8" fill="currentColor" opacity="0.15"/>
+              <path d="M9 13V5M9 5l-3 3M9 5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div id="input-counter" class="input-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette -->
+  <div id="command-palette-overlay" class="command-palette-overlay">
+    <div id="command-palette" class="command-palette">
+      <input id="command-palette-input" type="text" placeholder="Type a command..." />
+      <div id="command-list" class="command-list"></div>
+    </div>
+  </div>
+
+  <!-- Multi-select bar -->
+  <div id="multi-select-bar" class="multi-select-bar">
+    <span id="select-count">0 selected</span>
+    <button id="select-copy-btn">Copy</button>
+    <button id="select-delete-btn">Delete</button>
+    <button id="select-cancel-btn">Cancel</button>
+  </div>
+
+  <!-- Typing Status -->
+  <div id="typing-status" class="typing-status">
+    <span class="typing-dot"></span>
+    <span id="typing-text">Claude is thinking...</span>
+  </div>
+
+  <!-- Drag and Drop Overlay -->
+  <div id="drag-overlay" class="drag-overlay" aria-hidden="true">
+    <span>Drop files here</span>
+  </div>
+
+  <!-- Image Viewer Modal -->
+  <div id="image-modal" class="modal-overlay" role="dialog" aria-label="Image viewer" aria-modal="true">
+    <div class="modal image-modal">
+      <img id="image-modal-img" src="" alt="Full size image">
+    </div>
+  </div>
+
+  <!-- Delete Confirmation Modal -->
+  <div id="delete-modal" class="modal-overlay" role="dialog" aria-label="Delete confirmation" aria-modal="true">
+    <div class="modal delete-modal">
+      <h3>Delete this session?</h3>
+      <p>This action cannot be undone.</p>
+      <div class="modal-actions">
+        <button id="delete-cancel-btn" class="modal-btn modal-btn-cancel">Cancel</button>
+        <button id="delete-confirm-btn" class="modal-btn modal-btn-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Session Item Template -->
+  <template id="session-item-template">
+    <div class="session-item" data-session-id="">
+      <span class="session-name">New Chat</span>
+      <span class="session-time">Just now</span>
+      <button class="delete-btn" aria-label="Delete session">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 4h10M5 4V3a1 1 0 011-1h2a1 1 0 011 1v1M11 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2V4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </template>
+
+  <!-- Message Template -->
+  <template id="message-template">
+    <div class="message">
+      <div class="message-content"></div>
+      <div class="message-actions">
+        <button class="copy-msg-btn" aria-label="Copy message">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <rect x="4" y="4" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M10 4V2.5A1.5 1.5 0 008.5 1h-6A1.5 1.5 0 001 2.5v6A1.5 1.5 0 002.5 10H4" stroke="currentColor" stroke-width="1.2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </template>
+
+  <!-- Tool Block Template -->
+  <template id="tool-block-template">
+    <div class="tool-block" data-tool-id="">
+      <div class="tool-header">
+        <svg class="tool-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M6 2l4 6-4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="tool-name"></span>
+        <span class="tool-status"></span>
+      </div>
+      <div class="tool-body">
+        <div class="tool-input">
+          <div class="tool-section-label">Input</div>
+          <pre><code></code></pre>
+        </div>
+        <div class="tool-output">
+          <div class="tool-section-label">Output</div>
+          <pre><code></code></pre>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Thinking Animation Template -->
+  <template id="thinking-template">
+    <div class="message assistant">
+      <div class="message-content">
+        <div class="thinking">
+          <div class="thinking-dot"></div>
+          <div class="thinking-dot"></div>
+          <div class="thinking-dot"></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Hidden file input for attachments -->
+  <input type="file" id="file-input" multiple accept="image/*,.pdf,.txt,.md,.json,.csv,.js,.ts,.py,.html,.css" style="display: none;" aria-hidden="true">
+
+  <script src="app.js"></script>
+</body>
+</html>

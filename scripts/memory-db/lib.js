@@ -31,11 +31,12 @@ function err(msg) { console.error(`${C.red}  [err]${C.reset} ${msg}`); }
 // Paths
 // ---------------------------------------------------------------------------
 const PROJECTS_DIR = path.join(
-  "C:", "Users", "Qadri Laptop", ".claude", "projects",
-  "D--Personal-Smarter-revolution-Ruflow"
+  process.env.HOME || "/home/claude-user", ".claude", "projects",
+  "-home-claude-user-workspace-repos-ruflow"
 );
 const MEMORY_DIR = path.join(PROJECTS_DIR, "memory");
-const DB_PATH = path.join(MEMORY_DIR, "agentdb.sqlite");
+const PROJECT_ROOT = process.env.CLAUDE_PROJECT_DIR || path.resolve(__dirname, "../..");
+const DB_PATH = path.join(PROJECT_ROOT, "data", "memory", "agentdb.sqlite");
 
 // ---------------------------------------------------------------------------
 // Database initialization (sql.js WASM)

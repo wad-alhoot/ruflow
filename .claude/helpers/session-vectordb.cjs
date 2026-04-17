@@ -20,13 +20,13 @@ const { execSync, spawn } = require('child_process');
 // Config
 // ---------------------------------------------------------------------------
 const PROJECTS_DIR = path.join(
-  'C:', 'Users', 'Qadri Laptop', '.claude', 'projects',
-  'D--Personal-Smarter-revolution-Ruflow'
+  process.env.HOME || '/home/claude-user', '.claude', 'projects',
+  '-home-claude-user-workspace-repos-ruflow'
 );
 const MEMORY_DIR = path.join(PROJECTS_DIR, 'memory');
-const RUFLOW_DIR = 'D:/Personal/Smarter revolution/Ruflow';
+const RUFLOW_DIR = process.env.CLAUDE_PROJECT_DIR || '/home/claude-user/workspace/repos/ruflow';
 const INGEST_SCRIPT = path.join(RUFLOW_DIR, 'scripts', 'memory-db', 'ingest.js');
-const DB_PATH = path.join(MEMORY_DIR, 'agentdb.sqlite');
+const DB_PATH = path.join(RUFLOW_DIR, 'data', 'memory', 'agentdb.sqlite');
 
 // ---------------------------------------------------------------------------
 // Helpers

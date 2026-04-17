@@ -1,0 +1,10 @@
+[
+  {
+    "name": "books.toscrape.com",
+    "url": "https://books.toscrape.com/catalogue/page-1.html",
+    "product_selector": "article.product_pod",
+    "title_selector": "h3 a",
+    "price_selector": "p.price_color",
+    "delay_seconds": 1.5
+  }
+]
