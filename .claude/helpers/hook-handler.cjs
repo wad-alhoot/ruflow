@@ -34,6 +34,7 @@ const router = safeRequire(path.join(helpersDir, 'router.cjs'));
 const session = safeRequire(path.join(helpersDir, 'session.cjs'));
 const memory = safeRequire(path.join(helpersDir, 'memory.cjs'));
 const intelligence = safeRequire(path.join(helpersDir, 'intelligence.cjs'));
+const karpathy = safeRequire(path.join(helpersDir, 'karpathy.cjs'));
 
 const [,, command, ...args] = process.argv;
 
@@ -94,6 +95,10 @@ const handlers = {
     } else {
       console.log('[INFO] Router not available, using default routing');
     }
+    if (karpathy && karpathy.onRoute) {
+      var kg = karpathy.onRoute(prompt);
+      if (kg) console.log(kg);
+    }
   },
 
   'pre-bash': () => {
@@ -112,12 +117,16 @@ const handlers = {
     if (session && session.metric) {
       try { session.metric('edits'); } catch (e) { /* no active session */ }
     }
+    var file = hookInput.file_path || (hookInput.toolInput && hookInput.toolInput.file_path)
+      || process.env.TOOL_INPUT_file_path || args[0] || '';
     if (intelligence && intelligence.recordEdit) {
       try {
-        var file = hookInput.file_path || (hookInput.toolInput && hookInput.toolInput.file_path)
-          || process.env.TOOL_INPUT_file_path || args[0] || '';
         intelligence.recordEdit(file);
       } catch (e) { /* non-fatal */ }
+    }
+    if (karpathy && karpathy.onPostEdit) {
+      var kg = karpathy.onPostEdit(file);
+      if (kg) console.log(kg);
     }
     console.log('[OK] Edit recorded');
   },
@@ -170,6 +179,10 @@ const handlers = {
     } else {
       console.log('[OK] Task started');
     }
+    if (karpathy && karpathy.onPreTask) {
+      var kg = karpathy.onPreTask(prompt);
+      if (kg) console.log(kg);
+    }
   },
 
   'post-task': () => {
@@ -177,6 +190,10 @@ const handlers = {
       try {
         intelligence.feedback(true);
       } catch (e) { /* non-fatal */ }
+    }
+    if (karpathy && karpathy.onPostTask) {
+      var kg = karpathy.onPostTask(true);
+      if (kg) console.log(kg);
     }
     console.log('[OK] Task completed');
   },
