@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+/* ─── Pak Fashion Textile — Design System ─────────────────────────── */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Pak Fashion brand palette */
+  --pf-green-900: #1B4332;
+  --pf-green-700: #2D6A4F;
+  --pf-green-500: #40916C;
+  --pf-green-300: #74C69D;
+  --pf-gold: #D4A843;
+  --pf-gold-light: #E8C96A;
+
+  /* Shared easing */
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ─── Keyframes ─────────────────────────────────────────────────────── */
+
+@keyframes heroGradient {
+  0%   { background-position: 0% 50%; }
+  25%  { background-position: 100% 0%; }
+  50%  { background-position: 100% 100%; }
+  75%  { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-18px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  80%, 100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes bounceChevron {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(212, 168, 67, 0.15); }
+  50%      { box-shadow: 0 0 40px rgba(212, 168, 67, 0.3); }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes borderGradient {
+  0%, 100% { border-color: rgba(212, 168, 67, 0.3); }
+  50%      { border-color: rgba(45, 106, 79, 0.3); }
+}
+
+@keyframes textGlow {
+  0%, 100% { text-shadow: 0 0 10px rgba(212, 168, 67, 0); }
+  50%      { text-shadow: 0 0 20px rgba(212, 168, 67, 0.3); }
+}
+
+/* ─── Glassmorphism ─────────────────────────────────────────────────── */
+
+.glass {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(27, 67, 50, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* ─── Gradient Text ─────────────────────────────────────────────────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, #2D6A4F, #D4A843);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D4A843, #E8C96A, #D4A843);
+  background-size: 200% 200%;
+  animation: heroGradient 4s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Hover Lift ────────────────────────────────────────────────────── */
+
+.hover-lift {
+  transition: transform 0.3s var(--ease-out-expo),
+              box-shadow 0.3s var(--ease-out-expo);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ─── Shimmer Button ────────────────────────────────────────────────── */
+
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 70%
+  );
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* ─── Animated Border Gradient ──────────────────────────────────────── */
+
+.border-gradient-animated {
+  border: 2px solid transparent;
+  animation: borderGradient 3s ease infinite;
+}
+
+/* ─── Glow Effect ──────────────────────────────────────────────────── */
+
+.glow-gold {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* ─── Text glow ────────────────────────────────────────────────────── */
+
+.text-glow {
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+/* ─── Animated underline ──────────────────────────────────────────── */
+
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--pf-gold), var(--pf-green-500));
+  transition: width 0.4s var(--ease-out-expo);
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* ─── Section divider wave ──────────────────────────────────────────── */
+
+.section-wave {
+  position: relative;
+}
+
+.section-wave::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30C240 10 480 50 720 30C960 10 1200 50 1440 30V0H0Z' fill='white'/%3E%3C/svg%3E") no-repeat center;
+  background-size: cover;
+}
+
+/* ─── Stagger animation utility ────────────────────────────────────── */
+
+.stagger-item {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeInUp 0.6s var(--ease-out-expo) forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.05s; }
+.stagger-item:nth-child(2) { animation-delay: 0.1s; }
+.stagger-item:nth-child(3) { animation-delay: 0.15s; }
+.stagger-item:nth-child(4) { animation-delay: 0.2s; }
+.stagger-item:nth-child(5) { animation-delay: 0.25s; }
+.stagger-item:nth-child(6) { animation-delay: 0.3s; }
+
+/* ─── Noise texture overlay ────────────────────────────────────────── */
+
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* ─── Custom Scrollbar ──────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pf-green-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pf-green-700);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--pf-green-500) #f1f5f2;
+}
+
+/* ─── Selection ─────────────────────────────────────────────────────── */
+
+::selection {
+  background: rgba(45, 106, 79, 0.25);
+  color: var(--pf-green-900);
+}
+
+/* ─── Focus visible ─────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--pf-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ─── Smooth image loading ──────────────────────────────────────────── */
+
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* ─── Print styles ──────────────────────────────────────────────────── */
+
+@media print {
+  nav, .fixed, button[aria-label="Contact us on WhatsApp"] {
+    display: none !important;
+  }
+}
