@@ -1,0 +1,832 @@
+[
+  {
+    "key": "002_introduction",
+    "tldr": "Alex Finn introduces the AI App Accelerator (Claude Code edition), promising students will master Claude Code, build a full-stack monetizable app, and gain the lifelong ability to ship any idea. He frames Claude Code as the best vibe-coding tool he has ever used and explains why this first edition focuses entirely on it.",
+    "highlights": [
+      {"time": "00:00:20", "text": "Promised students will master Claude Code inside-out and ship a full-stack, monetizable app by course end."},
+      {"time": "00:01:18", "text": "Argued the bigger payoff is the lifelong skill of going from idea to working business on demand."},
+      {"time": "00:01:35", "text": "Framed the AI moment as unprecedented democratized success with zero barriers compared to dot-com era."},
+      {"time": "00:02:43", "text": "Shared his backstory: discovered vibe coding via Cursor in early 2024 and built Creator Buddy solo."},
+      {"time": "00:03:17", "text": "Disclosed Creator Buddy's revenue trajectory: $100K to $200K to $300K ARR with zero hand-written code."},
+      {"time": "00:03:31", "text": "Cited his media reach: 50K YouTube subscribers and a 40K-subscriber Ship It newsletter."},
+      {"time": "00:04:36", "text": "Declared Claude Code flatly the best software he has ever used, dismissing competing tool reviews as biased."},
+      {"time": "00:05:42", "text": "Praised Claude Code as simultaneously the most powerful tool and the most beginner-friendly to learn on."},
+      {"time": "00:05:56", "text": "Reframed Claude Code as a general AI agent, not just a coding tool, expanding its career value."},
+      {"time": "00:06:13", "text": "Previewed the next section on AI mindset as critical groundwork before any building begins."}
+    ],
+    "quotes": [
+      {"time": "00:04:36", "text": "It is the best piece of software I ever use. Hands down point blank."},
+      {"time": "00:01:53", "text": "There are zero barriers. This is the best part. It is complete. It is a democratized success."},
+      {"time": "00:05:31", "text": "I vibe code 12 hours a day for a year straight now. I'm telling you, there is nothing like Claude code."}
+    ]
+  },
+  {
+    "key": "003_mindset",
+    "tldr": "Alex argues that in the age of AI, the only skill AI cannot teach you is agency: the reflex to solve your own problems by asking the AI rather than asking other people. He pairs this with a warning against waiting for the perfect idea and asks students for 10 focused, phone-free minutes a day.",
+    "highlights": [
+      {"time": "00:00:04", "text": "Asserted that AI now lets you solve literally any technical problem you encounter on your own."},
+      {"time": "00:00:54", "text": "Defined agency as the willingness to take action and figure things out without help from others."},
+      {"time": "00:01:57", "text": "Told a story of a friend who kept asking him about Supabase instead of asking the AI itself."},
+      {"time": "00:02:24", "text": "Pushed students' default reflex to be 'go to the AI' before bothering anyone else with a problem."},
+      {"time": "00:03:42", "text": "Warned against waiting for the perfect idea and urged students to just build whatever comes to mind."},
+      {"time": "00:04:40", "text": "Reframed shipping as a muscle: every imperfect build sharpens ideation, building, and launching skill."},
+      {"time": "00:04:54", "text": "Banned doom-scrolling and demanded students physically put their phone in another room while watching."},
+      {"time": "00:05:40", "text": "Asked for a minimum commitment of 10 focused minutes a day to build the focus muscle."},
+      {"time": "00:06:46", "text": "Cited 99% of people doing nothing productive daily as the reason 10 minutes lap competition fast."}
+    ],
+    "quotes": [
+      {"time": "00:00:48", "text": "The only skill you actually have to learn that AI can't teach you is something called agency."},
+      {"time": "00:02:23", "text": "I go stop talking. You're not built for this."},
+      {"time": "00:04:00", "text": "The way you get to perfection is by doing not perfection over and over and over again."}
+    ]
+  },
+  {
+    "key": "004_coming-up-with-million-ideas-your-own-problems",
+    "tldr": "Alex explains the first of two idea-generation paths: solving your own problems. He walks through how Creator Buddy was born from his tedious tweet-review spreadsheet and tells students to brain-dump every daily annoyance into Apple Notes, because even if no one buys the app, you have already improved your own life.",
+    "highlights": [
+      {"time": "00:00:31", "text": "Established that great apps must solve a real pain point or no one will use them."},
+      {"time": "00:01:13", "text": "Showed his actual tweet-review spreadsheet where he manually tracked likes, retweets, and views daily."},
+      {"time": "00:02:08", "text": "Explained that Creator Buddy was built specifically to automate his own tedious tweet-review workflow."},
+      {"time": "00:02:36", "text": "Argued the worst case of solving your own problem is still a win because your own life improves."},
+      {"time": "00:03:34", "text": "Instructed students to brain-dump challenges into Apple Notes any time a minor inconvenience occurs."},
+      {"time": "00:04:33", "text": "Reframed entrepreneurship as nothing more than constantly noticing and solving challenges."},
+      {"time": "00:05:04", "text": "Recommended logging apps that personally annoy you, calling out Notion as one of his examples."},
+      {"time": "00:06:00", "text": "Previewed two student paths: build their own challenge or copy his choice for an easier ride."}
+    ],
+    "quotes": [
+      {"time": "00:02:36", "text": "The absolute worst case scenario is you just improved your life."},
+      {"time": "00:04:33", "text": "At the end of the day, all entrepreneurs are doing is trying to solve challenges."},
+      {"time": "00:04:54", "text": "If you constantly have that fixers mentality... you're going to come up with so many business ideas."}
+    ]
+  },
+  {
+    "key": "005_finding-other-peoples-challenges",
+    "tldr": "Alex runs a live Claude session to mine other people's pain points from his interests, drills deeper into AI-builder challenges, picks 'testing prompts across multiple models side by side' as the winning problem, and produces a PRD plus a first Claude Code prompt for an app he names Prompt Race.",
+    "highlights": [
+      {"time": "00:00:35", "text": "Set up the exercise: feed an AI three overlapping interests and let it surface daily user challenges."},
+      {"time": "00:01:18", "text": "Prompted Claude with 'building things with AI, content creation, digital entrepreneurship' as his interests."},
+      {"time": "00:01:54", "text": "Stressed working side-by-side and pausing the video to actually run the exercise in real time."},
+      {"time": "00:03:00", "text": "Identified the pain of testing the same prompt across many models in tabs as a real personal problem."},
+      {"time": "00:05:01", "text": "Went off-script to ask Claude for ten more challenges in just the AI-builder category before choosing."},
+      {"time": "00:06:46", "text": "Selected the multi-model side-by-side prompt-tester as the challenge to build for the rest of the course."},
+      {"time": "00:07:24", "text": "Asked Claude for three V1 solutions buildable in two weeks at a $10-$15/month price point."},
+      {"time": "00:09:06", "text": "Picked solution one, the Prompt Race side-by-side AI tester, as the app the course will build."},
+      {"time": "00:09:50", "text": "Generated a full PRD for Prompt Race with personas, auth, onboarding, and core testing UI."},
+      {"time": "00:10:47", "text": "Specified the tech stack: Next.js, Tailwind, Supabase, and Clerk for the first Claude Code prompt."}
+    ],
+    "quotes": [
+      {"time": "00:09:18", "text": "Even at the end of the day, if the idea stinks... at least you're going to build an app."},
+      {"time": "00:11:14", "text": "You don't really want to one-shot things. Everyone talks about one-shotting this one."},
+      {"time": "00:11:18", "text": "You really want to break things down into tiny little steps and then run those prompts one micro step at a time."}
+    ]
+  },
+  {
+    "key": "006_choosing-the-right-path",
+    "tldr": "Alex presents the course's fork in the road: build your own chosen idea (challenging, more rewarding, your own unique app) or copy his Prompt Race build (easier, less learning). He recommends the challenging path for 80% of students and reminds them that hunting for problems should become a daily habit.",
+    "highlights": [
+      {"time": "00:00:09", "text": "Framed the rest of the course as taking one chosen solution and turning it into a launched app."},
+      {"time": "00:00:23", "text": "Defined the harder path: building one of the student's own solutions independently alongside him."},
+      {"time": "00:00:46", "text": "Defined the easier path: copying his exact Prompt Race build step by step on screen."},
+      {"time": "00:01:12", "text": "Conceded the easier path may be right for total non-technical beginners who have never touched code."},
+      {"time": "00:01:58", "text": "Promised the harder path leaves students with their own unique launched app at the end."},
+      {"time": "00:02:11", "text": "Encouraged daily challenge-spotting as a habit so students never run out of product ideas."},
+      {"time": "00:02:45", "text": "Argued the great wealthy builders get rich by hunting and solving challenges as fast as possible."},
+      {"time": "00:03:04", "text": "Recommended 80% of students take the harder path since they have already chosen a solution."}
+    ],
+    "quotes": [
+      {"time": "00:02:31", "text": "If you make that your mindset of like always hunting for challenges, you will never run out of ideas for products."},
+      {"time": "00:02:45", "text": "The grades get rich by looking for challenges constantly and solving them as quickly as they can."},
+      {"time": "00:03:04", "text": "I really do believe 80% of people taking this course should be doing the more challenging path."}
+    ]
+  },
+  {
+    "key": "007_vibe-codingclaude-code",
+    "tldr": "Alex defines vibe coding as writing software with natural language while ignoring the actual code, then defines Claude Code as a general-purpose AI agent that takes goals, reasons, and acts on the web and your filesystem. He argues the Claude models plus agentic capability make it the strongest coding tool available.",
+    "highlights": [
+      {"time": "00:00:08", "text": "Defined vibe coding as using AI to write code via natural language, no manual coding required."},
+      {"time": "00:00:26", "text": "Explained the term: you stop reviewing the code and just vibe with whatever output the AI produces."},
+      {"time": "00:00:51", "text": "Defined Claude Code as a general AI agent that takes commands and accomplishes them autonomously."},
+      {"time": "00:01:02", "text": "Distinguished AI from AI agent: AI answers questions, an agent takes goals and runs multi-step plans."},
+      {"time": "00:01:28", "text": "Clarified Claude Code is named for coding but is actually a general-purpose agent for any task."},
+      {"time": "00:01:38", "text": "Asserted no model writes better code than Claude and dismissed contrary benchmarks as stupid."},
+      {"time": "00:01:52", "text": "Highlighted Claude Code's web access plus filesystem access as keys to its agentic power."},
+      {"time": "00:02:08", "text": "Concluded that best coding model plus smartest agent equals the best code-writing tool on Earth."}
+    ],
+    "quotes": [
+      {"time": "00:00:30", "text": "You don't look at the code. You don't review what it's writing. That's why they came up with the term vibe coding."},
+      {"time": "00:01:36", "text": "No model writes better code than Claude. Most benchmarks agree with me. The benchmarks that don't agree with me are stupid."},
+      {"time": "00:01:02", "text": "An AI agent, you give a goal. It reflects it. It figures out how to accomplish that goal."}
+    ]
+  },
+  {
+    "key": "008_setting-up-claude-code",
+    "tldr": "Alex walks through his recommended environment: VS Code with the Claude Code extension, plus a paid Claude plan, a desktop AI copilot (he prefers GPT-5 Thinking), and TickTick for Kanban project management. He explains why he avoids the terminal and Cursor and runs slash login to connect the extension.",
+    "highlights": [
+      {"time": "00:00:08", "text": "Showed his working environment: Claude Code as a panel extension inside Visual Studio Code."},
+      {"time": "00:00:46", "text": "Rejected the raw terminal UI as too unfriendly compared to the polished extension experience."},
+      {"time": "00:01:28", "text": "Argued against using Claude Code inside Cursor because of unreliability and unnecessary subscription cost."},
+      {"time": "00:02:34", "text": "Instructed students to download VS Code free from code.visualstudio.com and install the Claude Code extension."},
+      {"time": "00:03:24", "text": "Outlined Claude plan options: $17 Pro may suffice, $100 plan guarantees finishing the app build."},
+      {"time": "00:04:26", "text": "Demoed slash login as the single command to authenticate the extension to your Claude plan."},
+      {"time": "00:04:43", "text": "Toured the workspace: file tree on the left, code in the middle, Claude Code chat on the right."},
+      {"time": "00:06:00", "text": "Recommended a desktop AI copilot, naming GPT-5 Thinking as his favorite ideation partner."},
+      {"time": "00:08:25", "text": "Introduced TickTick as his Kanban-style project management tool, with Apple Notes as a free alternative."},
+      {"time": "00:10:01", "text": "Previewed a high-level explanation of full-stack apps before the first Claude Code prompt."}
+    ],
+    "quotes": [
+      {"time": "00:00:57", "text": "There's a reason why 99.9% of people weren't using terminals before Claude code came out."},
+      {"time": "00:01:55", "text": "I don't think there's a single feature inside a cursor that you can't use in Claude code that Claude code doesn't do better."},
+      {"time": "00:04:02", "text": "I'm extremely confident you are going to get addicted to building with cloud code after this course."}
+    ]
+  },
+  {
+    "key": "009_architecture-of-an-app",
+    "tldr": "A high-level walkthrough of basic web app architecture (frontend, backend, database) and the supporting services (AI, auth, email, payments, hosting) that the course will use. Introduces the specific stack: Next.js + TypeScript, Supabase, ChatGPT/Claude, Clerk, Resend, Stripe, and Vercel — framing every piece before any code gets written.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Opened by promising a non-technical, high-level explanation of how the web app being built actually works."},
+      {"time": "00:00:34", "text": "Defined the three core layers: frontend (browser), database (data storage), and backend (the layer between them)."},
+      {"time": "00:01:01", "text": "Illustrated the flow with a banking site example — frontend asks backend, backend fetches balance from the database."},
+      {"time": "00:01:21", "text": "Listed the auxiliary services plugged into the frontend: AI, authentication, email, payments, and hosting."},
+      {"time": "00:02:03", "text": "Named the specific tech stack: Next.js + TypeScript for front/back, Supabase for database, Vercel for hosting."},
+      {"time": "00:02:19", "text": "Mapped each service to a vendor: ChatGPT/Claude for AI, Clerk for auth, Resend for email, Stripe for payments."},
+      {"time": "00:02:42", "text": "Reassured viewers that the most technical part of the course was now behind them."},
+      {"time": "00:02:48", "text": "Transitioned to the building phase by signaling Claude Code and the AI co-pilot would open next."}
+    ],
+    "quotes": [
+      {"time": "00:00:05", "text": "I swear this is less confusing than it looks."},
+      {"time": "00:02:42", "text": "The most technical part of this course is done. Congratulations. You made it past that. Now we get into the fun part."},
+      {"time": "00:01:52", "text": "They're basically plugins to the front end that do very specific tasks and make them easier."}
+    ]
+  },
+  {
+    "key": "010_setting-up-ai-copilot",
+    "tldr": "Sets up a second AI (ChatGPT 5 Thinking) as a permanent CEO/product-manager co-pilot that runs alongside Claude Code throughout the course. Gives the exact priming prompt for the co-pilot, then uses it to generate the initial 'simplest possible' V0 prompt for Claude Code — emphasizing scope discipline over one-shotting the whole app.",
+    "highlights": [
+      {"time": "00:00:13", "text": "Opened the ChatGPT desktop app and noted preference for GPT-5 Thinking, while saying Claude is fine too."},
+      {"time": "00:00:53", "text": "Framed Claude Code as the senior developer and the co-pilot as the CEO/product-manager partner."},
+      {"time": "00:01:22", "text": "Introduced the course app — Prompt Racer — a multi-model AI chat app with prompt library and optimization."},
+      {"time": "00:02:08", "text": "Recommended viewers build their own ideated app rather than copy the demo for higher learning value."},
+      {"time": "00:03:06", "text": "Pasted the priming prompt that sets the AI co-pilot's role and shared the Prompt Racer concept with it."},
+      {"time": "00:04:10", "text": "Confirmed the co-pilot understood the app via its summary of dual-model race, prompt library, and optimizer."},
+      {"time": "00:05:35", "text": "Asked the co-pilot for the simplest possible initial Claude Code prompt — basic chatbot only, no DB, no auth."},
+      {"time": "00:07:08", "text": "Received and copied the V0 prompt — single-page Next.js + TypeScript chat app with one model — ready for Claude Code."}
+    ],
+    "quotes": [
+      {"time": "00:00:53", "text": "Claude codes the senior developer building the app out for me and the AI co-pilot is the CEO product manager partner of the app with me."},
+      {"time": "00:04:50", "text": "It's like literally having a senior consultant working with you at all times."},
+      {"time": "00:06:17", "text": "I don't want to one shot the app, especially when you're newer, trying to one shot the app is just a major pain."}
+    ]
+  },
+  {
+    "key": "011_first-version-of-the-app",
+    "tldr": "First hands-on Claude Code session: creates the prompt-racer folder, switches to plan mode, pastes the V0 prompt, and watches Claude scaffold a Next.js + TypeScript + Tailwind chat app. Introduces plan mode as a critical drift-reducer and ends by running npm run dev to see the empty UI live on localhost:3000.",
+    "highlights": [
+      {"time": "00:00:09", "text": "Opened Claude Code via the VS Code extension button after creating a new prompt-racer folder."},
+      {"time": "00:00:42", "text": "Introduced plan mode by hitting shift-tab twice — Claude builds a plan instead of writing code immediately."},
+      {"time": "00:01:21", "text": "Pasted the V0 prompt from the AI co-pilot into Claude Code while still in plan mode and sent it."},
+      {"time": "00:02:32", "text": "Reviewed the generated plan — Next.js init, dependencies, Tailwind, chat page, API route, env vars."},
+      {"time": "00:03:35", "text": "Defined APIs in plain English as 'two pieces of software communicating with each other' for non-technical viewers."},
+      {"time": "00:04:19", "text": "Clicked 'Yes and auto-accept' to let Claude write code, citing 12-hour daily use as evidence of trustworthiness."},
+      {"time": "00:06:21", "text": "Watched files populate in the left panel and Claude's running to-do list update on the right."},
+      {"time": "00:07:46", "text": "Opened the terminal with Ctrl+backtick and ran npm run dev to start the local development server."},
+      {"time": "00:08:34", "text": "Cmd-clicked localhost:3000 and saw the bare Prompt Racer chat UI live, with AI not yet wired up."}
+    ],
+    "quotes": [
+      {"time": "00:00:53", "text": "Plan mode is a critical, critical thing to learn. This is the mode where Claude doesn't write any code. It just builds a plan."},
+      {"time": "00:08:52", "text": "This is V zero. This isn't even V one. This isn't even like a beta. This is as framework as it possibly gets."},
+      {"time": "00:04:24", "text": "I use Claude code for like 12 hours a day every day of the week. It is very trustworthy."}
+    ]
+  },
+  {
+    "key": "012_adding-ai-functionality",
+    "tldr": "A short module that wires the OpenAI API into the V0 chat app by generating a key at platform.openai.com, adding it to .env.local, and verifying chat responses come from the real model. The first moment the app actually feels alive — sending 'Who is Elon Musk?' and getting a real GPT answer.",
+    "highlights": [
+      {"time": "00:00:31", "text": "Re-explained APIs as the bridge that lets ChatGPT software talk to the Prompt Racer app."},
+      {"time": "00:00:55", "text": "Directed viewers to platform.openai.com to sign up and add a credit card for cheap API credits."},
+      {"time": "00:01:17", "text": "Created a new secret key named 'prompt racer' from the OpenAI dashboard's API keys page."},
+      {"time": "00:01:32", "text": "Defined environment variables as the secret passwords that authenticate the app to external services."},
+      {"time": "00:02:05", "text": "Created .env.local from the .env.example template and pasted the OpenAI key into it."},
+      {"time": "00:02:23", "text": "Warned never to share API keys publicly because others could rack up charges on the account."},
+      {"time": "00:02:39", "text": "Refreshed the app and successfully sent 'Hey, are you there?' getting a real model reply back."},
+      {"time": "00:02:48", "text": "Confirmed it wasn't a demo by asking 'Who is Elon Musk?' and receiving the full AI-generated answer."}
+    ],
+    "quotes": [
+      {"time": "00:02:55", "text": "You now have an AI powered app."},
+      {"time": "00:02:24", "text": "This is a secret password. You don't want to show yours to other people because then they'll be able to use your API and charge your account."},
+      {"time": "00:03:05", "text": "Congratulations. You just built your first AI app."}
+    ]
+  },
+  {
+    "key": "013_claude-rules",
+    "tldr": "Walks through the nine-rule CLAUDE.md file the instructor uses to make Claude Code 'pretty much flawless.' Rules center on planning to a markdown to-do list, checking in before acting, marking progress as it goes, and — above all — keeping every change as small, simple, and root-cause-fixing as possible. Pure copy-paste setup.",
+    "highlights": [
+      {"time": "00:00:10", "text": "Instructed creation of CLAUDE.md inside the .claude folder, explained content auto-injects into every prompt."},
+      {"time": "00:00:45", "text": "Claimed these nine personally-developed rules eliminated nearly all errors with Claude Code."},
+      {"time": "00:01:04", "text": "Rule 1 — first think through the problem, read relevant files, write a plan to tasks/todo.md."},
+      {"time": "00:01:28", "text": "Rule 2 — Claude must check in with the user before beginning work to confirm the to-do list."},
+      {"time": "00:01:38", "text": "Rule 3 — mark items complete and give a high-level explanation of changes made at every step."},
+      {"time": "00:02:08", "text": "Rules 4-6 — every task and code change must be as simple as possible, touching as little code as possible."},
+      {"time": "00:02:37", "text": "Rule 7 — never be lazy: find the root cause of bugs and fix them permanently, no temporary patches."},
+      {"time": "00:02:55", "text": "Rule 9 — fixes should impact only necessary code relevant to the task and nothing else."}
+    ],
+    "quotes": [
+      {"time": "00:00:50", "text": "I have figured out these nine rules that have made Claude pretty much flawless for me. I basically do not get any issues or errors with Claude anymore."},
+      {"time": "00:02:35", "text": "Everything is about simplicity."},
+      {"time": "00:02:41", "text": "Do not be lazy. Never be lazy. If there's a bug, find the root cause and fix it. No temporary fixes."}
+    ]
+  },
+  {
+    "key": "014_setting-up-the-database-and-auth",
+    "tldr": "The biggest leap of the course: connects the chat app to Supabase for both database and auth. Covers SQL tables/rows/columns conceptually, runs Claude's generated migration in Supabase's SQL editor, plugs three env vars into .env.local, debugs a non-firing login form via console and network logs, and ends with messages persisting to real tables. Also models how to use Claude's working time productively by ideating with the AI co-pilot.",
+    "highlights": [
+      {"time": "00:01:44", "text": "Chose Supabase for both database and auth, dropping the planned Clerk integration to simplify the stack."},
+      {"time": "00:02:42", "text": "Explained tables, columns, and rows using a users-table spreadsheet analogy with email/first/last name."},
+      {"time": "00:04:36", "text": "Created the prompt-racer Supabase project with a generated password, then prompted Claude in plan mode."},
+      {"time": "00:06:38", "text": "Approved the plan covering Supabase config, schema, RLS policies, auth pages, API routes, and UI updates."},
+      {"time": "00:09:08", "text": "Used Claude's working time to brainstorm features with the co-pilot and update a Trello-style kanban board."},
+      {"time": "00:14:23", "text": "Copied the generated SQL migration file and ran it in Supabase's SQL editor to create conversations and messages tables."},
+      {"time": "00:17:09", "text": "Pasted Supabase URL, anon key, and service role key into .env.local from the project's API settings page."},
+      {"time": "00:19:11", "text": "Hit a silent login bug — sign-in did nothing despite the user existing in the auth table."},
+      {"time": "00:19:27", "text": "Walked through debugging: checked browser console, then VS Code network/terminal logs, found no errors."},
+      {"time": "00:20:46", "text": "Reported the symptoms to Claude as if to a senior developer; Claude diagnosed a form-submission bug and fixed it."},
+      {"time": "00:22:24", "text": "Restarted the dev server, signed in successfully, sent a message, and confirmed rows appeared in both tables."}
+    ],
+    "quotes": [
+      {"time": "00:09:18", "text": "Most people while their AI is building out code are going to pick up their phone, start scrolling Twitter or TikTok or Instagram. Not you, not you, not you."},
+      {"time": "00:21:29", "text": "This is our senior developer. It's like you're talking to a developer. Hey, not working. Can you help me out here?"},
+      {"time": "00:23:25", "text": "You just did something that 99% of people on Planet Earth have never done in their life — create an actual working app with a database."}
+    ]
+  },
+  {
+    "key": "015_setting-up-github",
+    "tldr": "Creates a private GitHub repo for the project and has Claude Code push the codebase to it, including a one-line addition for first-time GitHub setup walkthroughs. Frames GitHub as the foundation for backups, multi-computer development, remote Claude agents, and eventual Vercel deployment.",
+    "highlights": [
+      {"time": "00:00:17", "text": "Defined GitHub as an online code repository where developers store, back up, and host app code."},
+      {"time": "00:00:32", "text": "Clicked 'New repository' on github.com, named it prompt-racer-app, and set visibility to private."},
+      {"time": "00:00:54", "text": "Copied the new repository's address from the GitHub setup page to use inside Claude Code."},
+      {"time": "00:01:33", "text": "Asked Claude to upload the code and pasted the repository URL directly into the prompt."},
+      {"time": "00:01:54", "text": "Added the line 'this is my first time using GitHub on this computer' so Claude walks through full setup."},
+      {"time": "00:02:30", "text": "Approved git initialization with 'yes and don't ask again' to streamline subsequent commits."},
+      {"time": "00:02:43", "text": "Listed the downstream benefits: backups, cross-computer access, remote Claude agents, Vercel hosting."},
+      {"time": "00:03:35", "text": "Refreshed GitHub and confirmed the entire codebase was now live in the new repo."},
+      {"time": "00:04:09", "text": "Warned that Claude doesn't always auto-push, so users should sometimes ask 'make sure GitHub is up to date.'"}
+    ],
+    "quotes": [
+      {"time": "00:02:55", "text": "It's also going to allow us to start using other cool tools like Claude for web so you can set out remote cloud agents to work on your app while you're sleeping, which is sick."},
+      {"time": "00:04:03", "text": "You are now a GitHub user. Congratulations."},
+      {"time": "00:04:21", "text": "Every change we make in GitHub is given a checkpoint. Everything is backed up."}
+    ]
+  },
+  {
+    "key": "016_adding-new-features-prompt-optimizer-debugging",
+    "tldr": "Walks through building a prompt optimizer feature in plan mode, debugging when the AI returns chat responses instead of optimized prompts, then upgrading from GPT-4o to GPT-5 and switching to GPT-5-mini for speed. Demonstrates context management with /clear, screenshot-based debugging, and the value of giving Claude documentation links when models are out of date.",
+    "highlights": [
+      {"time": "00:01:23", "text": "Explained the context window indicator showing 46% remaining and how auto-compact loses detail when full."},
+      {"time": "00:02:11", "text": "Demonstrated /clear and the new chat button to wipe context before starting an unrelated feature."},
+      {"time": "00:03:32", "text": "Entered plan mode via shift-tab-twice to spec the prompt optimizer without advanced prompt engineering."},
+      {"time": "00:08:59", "text": "Reviewed Claude's plan covering an optimize button, OpenAI API route, and side-by-side version selection."},
+      {"time": "00:15:07", "text": "Caught a bug where the optimize button returned a chat response instead of an optimized prompt."},
+      {"time": "00:16:08", "text": "Screenshotted the broken UI and pasted it back to Claude with a description of the misbehavior."},
+      {"time": "00:17:38", "text": "Asked Claude to upgrade to GPT-5 since 4o was producing weak responses, triggering a web search."},
+      {"time": "00:21:04", "text": "Identified that GPT-5 doesn't support a temperature parameter via the network log inspector."},
+      {"time": "00:22:01", "text": "Tested the fixed optimizer and got a detailed strategist-style optimized prompt with constraints."},
+      {"time": "00:25:15", "text": "Switched to GPT-5-mini after pasting the model snapshot screenshot to improve response speed."}
+    ],
+    "quotes": [
+      {"time": "00:06:01", "text": "You don't need to talk to it like it's a robot. You don't need to use advanced prompt engineering techniques. Just talk to it like it's a human being."},
+      {"time": "00:11:09", "text": "I just saw an ad on Twitter for a new IDE called brain rot ID where they actually give you video games to play while the AI is good. That's so stupid."},
+      {"time": "00:23:04", "text": "That is, I would certainly say a little bit more of a detailed prompt than our original."}
+    ]
+  },
+  {
+    "key": "017_claude-skills-tweaking-the-ui",
+    "tldr": "Quick lesson on Claude skills as plugins that teach Claude new capabilities, focused on installing the official Anthropic front-end design skill via the CLI. Shows how invoking the skill transforms ugly blue/purple AI gradient UIs into polished dark-mode designs.",
+    "highlights": [
+      {"time": "00:00:07", "text": "Defined Claude skills as plugins added via markdown files in the .claude/skills folder."},
+      {"time": "00:00:50", "text": "Stated a preference for simplicity over feature stacking unless the result clearly justifies complexity."},
+      {"time": "00:01:18", "text": "Introduced the official Anthropic front-end design skill as worth the added complexity."},
+      {"time": "00:01:50", "text": "Opened a fresh terminal and typed claude to install the skills marketplace via the CLI."},
+      {"time": "00:02:32", "text": "Prompted Claude to redesign the UI mostly dark mode with pops of color using the front-end design skill."},
+      {"time": "00:03:13", "text": "Auto-accepted the skill invocation and watched Claude redesign the entire front end."},
+      {"time": "00:04:05", "text": "Reviewed the result, praising the clean dark theme without the cyberpunk slop common to AI apps."},
+      {"time": "00:04:39", "text": "Reminded viewers to explicitly ask Claude to use the design skill when doing UI work."}
+    ],
+    "quotes": [
+      {"time": "00:02:24", "text": "Now moving forward all UIs that Claude code designs for you will look significantly better. Way better night and day."},
+      {"time": "00:02:39", "text": "Before the skill every UI Claude would make would be like blue and purple slop gradients. Now it actually looks very beautiful."},
+      {"time": "00:03:39", "text": "This is going to be a big differentiator between any of the apps you build out and your competitors apps."}
+    ]
+  },
+  {
+    "key": "018_coming-up-with-new-ideas",
+    "tldr": "Demonstrates the workflow of asking Claude to generate an app overview markdown, feeding it to a second AI copilot for ideation, and adding the suggested model-racing comparison feature to the project tracker. Highlights the principle of breaking features into the smallest possible building blocks rather than one-shotting.",
+    "highlights": [
+      {"time": "00:00:30", "text": "Prompted Claude to create a new markdown file describing the entire app's features and architecture."},
+      {"time": "00:01:48", "text": "Reviewed the 628-line app overview markdown including database schema and key features."},
+      {"time": "00:02:14", "text": "Pasted the full app rundown into the AI CEO copilot for feedback and feature suggestions."},
+      {"time": "00:02:54", "text": "CEO copilot recommended adding AB model racing as the core differentiator with parallel side-by-side streaming."},
+      {"time": "00:03:46", "text": "Asked the copilot what TTFB meant after seeing it in the suggested stats list."},
+      {"time": "00:04:21", "text": "Added cost, total time, and time-to-first-byte metrics to the project management to-do list."},
+      {"time": "00:05:03", "text": "Started a new chat in plan mode to scope the prompt racing feature in isolation."},
+      {"time": "00:05:32", "text": "Stressed breaking features into molecular steps to avoid testing 49 things at once."},
+      {"time": "00:06:54", "text": "Ran the database migration in Supabase SQL editor for the new prompt racing tables."},
+      {"time": "00:07:45", "text": "Tested the race feature with two old GPT models and confirmed it broke as expected."}
+    ],
+    "quotes": [
+      {"time": "00:02:59", "text": "Short version, solid scaffold, but right now just a generic chat app, which is totally fine and a nice optimizer."},
+      {"time": "00:05:39", "text": "Once you start trying to one shot these massive features, you start to introduce confusion to the model. You introduce confusion to yourself."},
+      {"time": "00:05:53", "text": "Slow is fast, fast is good. Whatever the saying is, this is the way we want to do it."}
+    ]
+  },
+  {
+    "key": "019_debugging-adding-awesome-features",
+    "tldr": "Hands-on debugging session that fixes the prompt racing feature by feeding Claude live OpenAI documentation for GPT-5/5-mini/5-nano. Then layers on dual-model side-by-side chat in the main window plus live token cost and latency stats, with two more Supabase migrations along the way.",
+    "highlights": [
+      {"time": "00:01:08", "text": "Pasted errors to Claude and noted that many listed models were out of date."},
+      {"time": "00:03:09", "text": "Screenshotted three OpenAI doc pages for GPT-5, 5-mini, and 5-nano and pasted URLs into Claude."},
+      {"time": "00:04:34", "text": "Distinguished browser logs from terminal network logs as separate places to find errors."},
+      {"time": "00:05:43", "text": "Discovered a Supabase server client import error was the root cause of the 500 response."},
+      {"time": "00:06:18", "text": "Got the prompt race working with two GPT-5 variants returning side-by-side responses."},
+      {"time": "00:06:42", "text": "Asked Claude to move the race out of a modal and into a split chat window with follow-ups."},
+      {"time": "00:08:50", "text": "Ran another Supabase migration to track race mode and selected models on the conversation."},
+      {"time": "00:09:14", "text": "Verified one-shot success of the split-chat dual-model feature with persistent follow-up messaging."},
+      {"time": "00:11:01", "text": "Entered plan mode to add live elapsed time, token counts, and estimated cost per response."},
+      {"time": "00:15:07", "text": "Tested the finished stats UI showing tokens, cost, and time on each side of the race."}
+    ],
+    "quotes": [
+      {"time": "00:09:27", "text": "I feel very, very blessed to live in a time with a technology like this where you can just think of things and then it appears in front of you."},
+      {"time": "00:11:23", "text": "I always let it know when it did a good job and when it would build something well, only because I'm sure they're training the models."},
+      {"time": "00:08:00", "text": "It tests itself as it goes, finds errors, fixes them. That's why I really love this tool."}
+    ]
+  },
+  {
+    "key": "020_adding-last-features",
+    "tldr": "Wraps up the core feature set by adding a winner selection mechanism to the model race, persisting wins/losses, and exposing a stats sidebar. Quick screenshot-driven UI fix at the end before declaring V1 ready and previewing the upcoming landing page and Stripe modules.",
+    "highlights": [
+      {"time": "00:00:14", "text": "Outlined the remaining roadmap covering payments, landing page, security, and Vercel hosting."},
+      {"time": "00:01:14", "text": "Asked Claude to enable marking a model as the winner after a race conversation."},
+      {"time": "00:01:51", "text": "Switched to plan mode given the cross-cutting database, API, and UI changes required."},
+      {"time": "00:02:15", "text": "Reviewed the plan covering winner selection, win/loss tracking, and a stats display."},
+      {"time": "00:02:42", "text": "Ran a Supabase migration for the new winner-tracking schema with success no rows returned."},
+      {"time": "00:03:27", "text": "Tested the feature with an NBA finals query and noted GPT-5-mini was slower than 5.1 here."},
+      {"time": "00:04:17", "text": "Screenshotted the smushed top-right styling bug and sent it to Claude for a fix."},
+      {"time": "00:05:23", "text": "Sent a follow-up screenshot when the first styling fix wasn't enough, asking for a new approach."},
+      {"time": "00:05:37", "text": "Confirmed the redesigned sidebar with scrollable chats and called V1 of prompt racer ready to launch."}
+    ],
+    "quotes": [
+      {"time": "00:00:11", "text": "We're going to do the landing page. Building out the marketing page for our app."},
+      {"time": "00:05:42", "text": "I think we could launch V1 here of prompt racer. I like where we are with this V1."},
+      {"time": "00:03:53", "text": "It's funny, 5 mini is slower than 5.1. That's interesting."}
+    ]
+  },
+  {
+    "key": "021_landing-page",
+    "tldr": "Builds a marketing landing page from scratch using a customized CodeBucks design prompt, iterating with Claude through spacing, flickering, and color issues. Rejects blue/purple AI gradients and a hot-pink-magenta suggestion before settling on a monochrome brutalist aesthetic.",
+    "highlights": [
+      {"time": "00:00:55", "text": "Started a new chat in plan mode and prepped Claude with high-level context before sending the prompt."},
+      {"time": "00:02:08", "text": "Answered Claude's clarifying questions on root path, $12/month single tier, and dark theme matching."},
+      {"time": "00:04:39", "text": "Pasted the customized CodeBucks landing page prompt covering motion, glass morphism, and SEO."},
+      {"time": "00:06:23", "text": "Reviewed the first build with glass morphism hero but flagged sizing issues across sections."},
+      {"time": "00:07:30", "text": "Sent screenshots of weird header spacing one issue at a time rather than complaining broadly."},
+      {"time": "00:09:55", "text": "Reported persistent flickering as elements scrolled into view and asked Claude to fix it."},
+      {"time": "00:11:53", "text": "Demanded removal of the blue and purple gradients as too generic for an AI app."},
+      {"time": "00:12:53", "text": "Hit escape to reject Claude's hot pink magenta suggestion before it could implement it."},
+      {"time": "00:13:22", "text": "Tried forest green per personal preference but reverted after deciding it looked like swamp."},
+      {"time": "00:14:11", "text": "Settled on a monochrome brutalist palette and approved the simpler, non-AI-slop aesthetic."}
+    ],
+    "quotes": [
+      {"time": "00:08:13", "text": "It might feel like it's taking longer, but I promise you was doing it quicker this way."},
+      {"time": "00:13:01", "text": "Hot pink magenta is the absolute worst choice I can possibly imagine. We are not doing that. AI still does not have good taste."},
+      {"time": "00:12:23", "text": "My biggest complaint about Claude Code: everything starts at 'you're absolutely right.' I absolutely hate it."}
+    ]
+  },
+  {
+    "key": "022_payments-and-hosting-on-vercel",
+    "tldr": "Walks through implementing Stripe payments and hosting on Vercel as the final product step before marketing. Covers signing up for Stripe, creating a product, configuring webhooks, deploying to Vercel via GitHub, and buying a custom domain (promptracer.ai).",
+    "highlights": [
+      {"time": "00:00:00", "text": "Framed Stripe integration as the final product step before pivoting to marketing and customers."},
+      {"time": "00:01:01", "text": "Prompted Claude to walk through Stripe implementation including Supabase changes for subscription data."},
+      {"time": "00:02:23", "text": "Ran the Supabase migration manually by pasting SQL into the editor and hitting run."},
+      {"time": "00:02:43", "text": "Created a new Stripe account named prompt racer and configured it for recurring subscriptions."},
+      {"time": "00:03:36", "text": "Created a recurring product priced at twelve dollars monthly inside the Stripe product catalog."},
+      {"time": "00:04:43", "text": "Copied Stripe secret and publishable API keys into the dot env dot local file."},
+      {"time": "00:05:32", "text": "Pivoted to Vercel hosting because the webhook required a real domain endpoint URL."},
+      {"time": "00:07:22", "text": "Pasted Vercel build errors back into Claude Code to have them auto-fixed."},
+      {"time": "00:09:55", "text": "Purchased the promptracer.ai domain through Vercel for one hundred forty dollars."},
+      {"time": "00:11:18", "text": "Confirmed the live site at promptracer.ai was reachable and ready for webhook setup next session."}
+    ],
+    "quotes": [
+      {"time": "00:00:46", "text": "I'm gonna be honest, implementing Stripe is not the easiest thing in the world, but I got good news for you. Using AI makes it much easier."},
+      {"time": "00:00:31", "text": "It is the best payment processor on planet earth. There's a reason why literally everyone uses it as their payment processor."},
+      {"time": "00:07:46", "text": "I'm sure you got some build errors too. So you just copy and paste in the build errors and it is going to go and fix them for us."}
+    ]
+  },
+  {
+    "key": "023_payments-and-hosting-on-vercel-pt-2",
+    "tldr": "Finishes the Stripe webhook setup and debugs a cascade of subscription flow bugs (email confirmation redirects, missing subscriptions, login state) by feeding errors back to Claude. After multiple iterations, achieves a working trial signup that creates Stripe customers and Supabase subscription rows.",
+    "highlights": [
+      {"time": "00:00:23", "text": "Reset context with the AI by screenshotting the webhook screen and asking what to enter."},
+      {"time": "00:01:26", "text": "Created the webhook destination and copied the signing secret into both local env and Vercel."},
+      {"time": "00:02:33", "text": "Tested the trial signup and discovered no subscription row was created in Supabase."},
+      {"time": "00:03:54", "text": "Updated Supabase authentication URL configuration to redirect from localhost to promptracer.ai."},
+      {"time": "00:04:24", "text": "Recommended setting up a separate development Supabase project after shipping for safer testing."},
+      {"time": "00:08:55", "text": "Acknowledged Stripe was the most complicated part of building and required patience with the AI."},
+      {"time": "00:09:55", "text": "Told the AI to try something dramatically different because previous fix attempts had all failed."},
+      {"time": "00:10:48", "text": "Verified the trialing subscription appeared with price ID, period dates, and user info in Supabase."},
+      {"time": "00:11:14", "text": "Confirmed the matching customer and trial subscription showed up correctly inside the Stripe dashboard."},
+      {"time": "00:12:14", "text": "Pointed users to Vercel logs, browser console, and Stripe events as the three places to find errors."}
+    ],
+    "quotes": [
+      {"time": "00:00:58", "text": "You have infinite intelligence at your fingertips at all times, which is pretty amazing."},
+      {"time": "00:09:00", "text": "This is probably the most complicated part of building the app — setting up the payments and getting that to work."},
+      {"time": "00:09:55", "text": "Try something dramatically different because all of your attempts up to here have not worked."}
+    ]
+  },
+  {
+    "key": "024_security",
+    "tldr": "Covers the security basics every shipped app needs: keeping API keys out of frontend code, enabling row level security on every Supabase table, protecting API routes, adding rate limiting, moving system prompts to backend, and running an AI-driven production security audit.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Framed security as a topic too vast for one course but provided a checklist plus AI prompts."},
+      {"time": "00:00:46", "text": "Stressed keeping all API keys in dot env files and never committing actual values to code."},
+      {"time": "00:01:32", "text": "Suggested asking the AI to verify no environment variable values leaked into frontend code."},
+      {"time": "00:01:49", "text": "Required row level security on every Supabase table to prevent cross-user data hacking."},
+      {"time": "00:02:50", "text": "Mandated API route protection by having Claude audit every endpoint for proper auth."},
+      {"time": "00:03:16", "text": "Explained rate limiting prevents bad actors from automating thousands of requests to crash the app."},
+      {"time": "00:03:42", "text": "Insisted system prompts live in backend APIs only so users cannot inspect proprietary AI logic."},
+      {"time": "00:04:35", "text": "Closed with a final AI prompt asking Claude to perform a production-readiness vulnerability scan."},
+      {"time": "00:05:02", "text": "Reported zero security issues since launching Creator Buddy a year ago using these practices."},
+      {"time": "00:05:38", "text": "Wrapped the product portion of the course and previewed the marketing and customer sections."}
+    ],
+    "quotes": [
+      {"time": "00:01:05", "text": "Those are basically your passwords to OpenAI, your database, and everything you use. Those are highly, highly secret."},
+      {"time": "00:00:34", "text": "I haven't had a single security issue since it's launched a year ago. And I've had many experts go through and tell me it's looking really good."},
+      {"time": "00:04:46", "text": "I want to make sure this is production ready. Can you go in and do a security check across our app to see if there are any vulnerabilities."}
+    ]
+  },
+  {
+    "key": "025_building-distribution",
+    "tldr": "Introduces the Share Your Journey (SYJ) marketing strategy that drove Creator Buddy to 100K ARR in ten minutes. Argues content creation beats SEO, recommends X for low-barrier starters, YouTube for highest reward, and Substack for long-form writers, all anchored in pre-launch feature demos and personal storytelling.",
+    "highlights": [
+      {"time": "00:00:04", "text": "Recapped Creator Buddy launch numbers: 100K ARR in ten minutes, 200K in two hours, 300K in weeks."},
+      {"time": "00:00:39", "text": "Introduced the Share Your Journey strategy as the foundation for getting customers via content."},
+      {"time": "00:01:01", "text": "Dismissed SEO as a constantly-changing game and championed content as the figured-out path."},
+      {"time": "00:01:45", "text": "Showed a December 25 2024 tweet about an AI content coach that built pre-launch hype."},
+      {"time": "00:03:21", "text": "Encouraged tying personal journey and life purpose into tweets to deepen audience investment."},
+      {"time": "00:04:24", "text": "Named X as the lowest-barrier platform ideal for busy people with nine to five jobs."},
+      {"time": "00:05:21", "text": "Called YouTube the best social platform on Earth because two percent of all human time is spent there."},
+      {"time": "00:07:24", "text": "Recommended Substack only for those genuinely interested in long-form writing to avoid quick unsubscribes."},
+      {"time": "00:08:17", "text": "Advised total beginners start on X first to practice voice before attempting YouTube videos."},
+      {"time": "00:09:19", "text": "Closed by previewing the next section on finding beta testers before launch day."}
+    ],
+    "quotes": [
+      {"time": "00:00:39", "text": "Yeah well why do you think I have so many followers? Because I created a lot of content about things I'm interested in."},
+      {"time": "00:05:30", "text": "Two percent of all human time is spent on YouTube. It is by far the most popular social media platform on planet Earth."},
+      {"time": "00:06:02", "text": "Mr. Beast is a more popular person than whoever the most popular actor is in Hollywood. I can't even tell you who it is."}
+    ]
+  },
+  {
+    "key": "026_beta-testing",
+    "tldr": "Explains how to recruit beta testers by baiting interested replies on social content, DMing them invites, and grouping them in a shared X chat to compound excitement. Recommends pursuing high-barrier channels like live streams and X spaces, and treating beta testers as future day-one customers.",
+    "highlights": [
+      {"time": "00:00:03", "text": "Stressed beta testing as imperative because users always find bugs the builder cannot."},
+      {"time": "00:00:33", "text": "Described baiting beta testers by tweeting features and reaching out to interested commenters."},
+      {"time": "00:01:13", "text": "Recommended grouping multiple beta testers in an X group chat so they share experiences."},
+      {"time": "00:01:34", "text": "Promoted unusual high-barrier channels like X live streams and Spaces to attract testers."},
+      {"time": "00:02:31", "text": "Showed how to extend free trials inside Stripe by editing customer subscriptions directly."},
+      {"time": "00:02:46", "text": "Recommended a full month of beta testing before launch to fix bugs and consider pivots."},
+      {"time": "00:03:08", "text": "Revealed about half of Creator Buddy's launch-day customers came directly from beta testers."},
+      {"time": "00:03:32", "text": "Repeated that high-barrier marketing channels deliver disproportionately bigger impact."},
+      {"time": "00:04:01", "text": "Warned that copied marketing strategies stop working once everyone adopts them."},
+      {"time": "00:04:33", "text": "Closed with a preview of pricing strategy and launch day playbook for the next videos."}
+    ],
+    "quotes": [
+      {"time": "00:00:33", "text": "How do you find beta testers? Well, you basically bait them. You put out a rod into the water."},
+      {"time": "00:03:32", "text": "The more high barrier, the more difficult a piece of content or marketing channel is, the more impactful it's going to be."},
+      {"time": "00:04:32", "text": "It's going to be hard work. You're going to have a lot of low sleep nights, but that's what is required to launch successful products."}
+    ]
+  },
+  {
+    "key": "027_pricing-strategy",
+    "tldr": "Explains pricing as a function of three variables: margins (target 50-70 percent), audience leverage, and competitor pricing. Recommends surveying beta testers pre-launch and watching churn post-launch as the two feedback signals for price adjustments.",
+    "highlights": [
+      {"time": "00:00:07", "text": "Named margins as the single most important pricing input to ensure profitability."},
+      {"time": "00:00:42", "text": "Recommended a 50 to 70 percent target margin for AI-powered subscription apps."},
+      {"time": "00:01:07", "text": "Disclosed Creator Buddy faced 5K monthly X API costs plus AI usage, justifying 50 dollar pricing."},
+      {"time": "00:01:31", "text": "Argued audience leverage lets thought leaders charge premium prices over competitors."},
+      {"time": "00:01:55", "text": "Advised builders without an audience to shrink margins to stay competitive on price."},
+      {"time": "00:02:07", "text": "Added competitor pricing as the third variable, especially for tools with similar feature sets."},
+      {"time": "00:02:46", "text": "Recommended bluntly asking beta testers what they would pay and inviting honest feedback."},
+      {"time": "00:03:11", "text": "Defined churn rates above 10 to 20 percent as a signal that price exceeds delivered value."},
+      {"time": "00:03:31", "text": "Mapped pre-launch decisions to margins and competitors versus post-launch decisions to churn."},
+      {"time": "00:03:48", "text": "Closed by previewing the next section on launch day tactics and customer acquisition."}
+    ],
+    "quotes": [
+      {"time": "00:00:42", "text": "If it costs you ten dollars a month for every user, you charge twenty at the very least."},
+      {"time": "00:02:46", "text": "Hey, how much would you be willing to pay for this? Please be honest, I don't care if you hurt my feelings."},
+      {"time": "00:01:31", "text": "If you have a very premium audience, tons of users who look at you as a thought leader, you have more leverage to charge more."}
+    ]
+  },
+  {
+    "key": "028_launch-day-and-getting-customers",
+    "tldr": "Lays out launch day playbook: hit beta testers first, tweet three times in the prior week, post a full demo on launch day, and stay on standby for 24 hours of bug fixes. Promotes the jab-jab-hook content ratio (90 percent value, 10 percent advertising) to grow distribution while selling.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Identified beta testers as the most qualified launch-day customers to contact first."},
+      {"time": "00:00:24", "text": "Recommended three hype-building tweets in the week before launch without over-advertising."},
+      {"time": "00:01:01", "text": "Mandated a full demo video walking through the entire app on launch day."},
+      {"time": "00:01:35", "text": "Disclosed staying awake 24 hours straight after Creator Buddy launched fixing user-reported bugs."},
+      {"time": "00:02:16", "text": "Shared the niche-related reply trick: plug your app as the first reply to viral on-topic tweets."},
+      {"time": "00:02:53", "text": "Argued direct advertising tweets fail and value-first hooks drive real traffic to apps."},
+      {"time": "00:03:46", "text": "Introduced Gary Vee's jab-jab-hook framework: give value twice before plugging once."},
+      {"time": "00:04:13", "text": "Prescribed a 90 percent value, 10 percent advertising ratio for tweets and content."},
+      {"time": "00:04:30", "text": "Reported growing X from 200K to 320K and YouTube from 10K to 50K post-launch."},
+      {"time": "00:04:47", "text": "Warned that turning all content into advertising kills distribution and long-term customer flow."}
+    ],
+    "quotes": [
+      {"time": "00:01:35", "text": "I did not sleep for 24 hours when Creator Buddy launched. I was pretty much up fixing bugs all night."},
+      {"time": "00:03:46", "text": "Jab jab hook. This is a Gary V saying. Give value, give value, then you can talk about your product."},
+      {"time": "00:02:31", "text": "Any tweet related to your niche, related to your app, or any tweet that goes viral and performs well — the first reply needs to be about your app."}
+    ]
+  },
+  {
+    "key": "029_feedback-and-improvement-of-your-app",
+    "tldr": "Frames post-launch as continuous progressive upkeep: DM every interested user for feedback, ship features constantly, and tweet about each ship for traffic spikes. Names churn the biggest enemy and prescribes open DMs, public support email, and rapid bug fixes as the antidote.",
+    "highlights": [
+      {"time": "00:00:06", "text": "Prescribed constant DM outreach to anyone tweeting or replying about the app for feedback."},
+      {"time": "00:00:32", "text": "Established the cycle: ship improvements, then create content highlighting what was just fixed."},
+      {"time": "00:00:50", "text": "Showed Creator Buddy shadow-band tool example where shipping plus tweeting drove customer spikes."},
+      {"time": "00:01:08", "text": "Identified ship-and-announce days as consistently the highest customer acquisition days."},
+      {"time": "00:01:34", "text": "Named bugs as the fastest path to churn, requiring open DMs and a dedicated support email."},
+      {"time": "00:01:55", "text": "Shared the Alex at CreatorBuddy email pattern users can reply to for support tickets."},
+      {"time": "00:02:09", "text": "Branded churn as the biggest enemy to be avoided through speed of bug response."},
+      {"time": "00:02:32", "text": "Stressed app shipping is ongoing progressive effort, not a release-and-walk-away activity."},
+      {"time": "00:02:45", "text": "Closed by previewing a final section on mindset and next steps after course completion."}
+    ],
+    "quotes": [
+      {"time": "00:00:41", "text": "The best marketing is improvement of your product."},
+      {"time": "00:02:06", "text": "Churn is your biggest enemy. You want to be avoiding churn at all costs."},
+      {"time": "00:01:14", "text": "The days that I get the most customers are the days where I ship something and then tweet about that new thing I shipped."}
+    ]
+  },
+  {
+    "key": "030_this-is-not-the-end",
+    "tldr": "Closing message of the Claude Code Masterclass: shipping the first app is the start, not the end. Keep iterating, stay idea-minded, build side projects, talk to your AI co-pilot, and grow your audience for the next launch.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Congratulated the student on finishing the masterclass and shipping their first app."},
+      {"time": "00:00:16", "text": "Framed the course completion as a beginning, not an end, and urged continued shipping."},
+      {"time": "00:00:33", "text": "Advised pivoting honestly when an idea is not growing, treating it as progress toward a winner."},
+      {"time": "00:01:14", "text": "Pushed students to stay idea-minded and prototype new challenges in fresh Claude Code chats."},
+      {"time": "00:02:02", "text": "Encouraged building side projects nightly alongside the main app, since multiple apps can ship."},
+      {"time": "00:02:30", "text": "Reminded viewers to keep talking daily to their AI co-pilot for brainstorming and problem solving."},
+      {"time": "00:02:51", "text": "Told students to be problem solvers, not victims of circumstance, and to build solutions to challenges."},
+      {"time": "00:03:17", "text": "Stressed continuing to grow YouTube and X audiences so future launches have buyers ready."},
+      {"time": "00:03:31", "text": "Offered open-door support for questions and committed to updating the course based on feedback."}
+    ],
+    "quotes": [
+      {"time": "00:00:12", "text": "This is not the end of your journey. This is simply the beginning of your journey."},
+      {"time": "00:02:51", "text": "You want to be a problem solver, not a victim of your circumstance."},
+      {"time": "00:00:44", "text": "It's not a bad thing if it doesn't work and you pivot because that means you figured out an idea is not working."}
+    ]
+  },
+  {
+    "key": "001_intro-to-the-multi-agent-workflow-and-github",
+    "tldr": "Intro to a multi-agent workflow that uses GitHub branches and Git worktrees so multiple Claude Code agents can work on the same app in parallel without conflicts. Promises 10x speed, fewer bugs, and rewindable history.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Introduced a workflow for writing code with AI agents in parallel for major speed gains."},
+      {"time": "00:00:29", "text": "Previewed GitHub branches and worktrees as the mechanism for running multiple agents safely."},
+      {"time": "00:00:54", "text": "Defined GitHub as a code repository and noted most shipped apps already live there."},
+      {"time": "00:01:13", "text": "Listed wins: fewer bugs, full backup history, easy rollback, and team collaboration."},
+      {"time": "00:01:52", "text": "Outlined plan to spin up multiple Claude Code agents, each with their own worktree and branch."},
+      {"time": "00:02:10", "text": "Explained that beginners typically only ship to the single main branch GitHub creates by default."},
+      {"time": "00:02:32", "text": "Described worktrees as separate local copies of code that merge back into branches, then main."},
+      {"time": "00:03:01", "text": "Reassured viewers the workflow becomes clear once practical setup begins in later videos."}
+    ],
+    "quotes": [
+      {"time": "00:01:07", "text": "Learning this workflow I'm about to go through with you will make you a more efficient AI programmer."},
+      {"time": "00:00:47", "text": "This is going to allow you to 10x your speed with cloud code or any other coding agent you're doing."},
+      {"time": "00:03:10", "text": "Trust me. If I can understand it, you can understand it."}
+    ]
+  },
+  {
+    "key": "002_how-github-works",
+    "tldr": "Quick foundational explainer on what GitHub is and how branches work as alternative timelines off the main branch. Sets up branches plus worktrees as the safe way to run multiple AI agents on the same codebase.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Recapped what GitHub is: the world's most popular online code repository, owned by Microsoft."},
+      {"time": "00:00:33", "text": "Identified the main branch as the source of truth that visitors actually see on a live site."},
+      {"time": "00:00:42", "text": "Introduced branches as alternative timelines that copy main and branch off like a tree."},
+      {"time": "00:01:04", "text": "Explained branches prevent conflicts when multiple changes land at once, then merge into main."},
+      {"time": "00:01:26", "text": "Connected branches to the AI era, enabling many agents instead of human teams to coordinate."},
+      {"time": "00:01:53", "text": "Recommended creating a branch for every new feature, tweak, or bug fix before merging."},
+      {"time": "00:02:09", "text": "Defined worktrees as local copies of code in their own workspace for committing to a branch."},
+      {"time": "00:02:35", "text": "Argued solo developers should still adopt the workflow for efficiency, paper trail, and rewinds."}
+    ],
+    "quotes": [
+      {"time": "00:00:46", "text": "Branches are basically alternative timelines of your code."},
+      {"time": "00:01:30", "text": "Now you can have multiple agents working on an app."},
+      {"time": "00:00:36", "text": "Your source of truth is your main branch. When people go to your website, this is the code they see."}
+    ]
+  },
+  {
+    "key": "003_multi-agent-workflow-spinning-up-branches",
+    "tldr": "Practical walkthrough of spinning up three parallel Claude Code agents in Ghostty terminal, each in its own worktree and branch (notes, to-do list, calendar) off a project-management demo app. Sets the stage for parallel feature work without conflicts.",
+    "highlights": [
+      {"time": "00:00:14", "text": "Chose terminal (Ghostty wrapper) over GUIs because terminals use little memory for many parallel agents."},
+      {"time": "00:01:14", "text": "Created a PM-app-demo folder with mkdir and cd, then launched Claude inside it."},
+      {"time": "00:02:04", "text": "Asked Claude to pull down the GitHub code into a new branch and worktree called notes."},
+      {"time": "00:03:08", "text": "Recommended forking the demo repo into a personal GitHub account before starting the workflow."},
+      {"time": "00:04:25", "text": "Confirmed Claude created worktrees for both master and the new notes branch as separate folders."},
+      {"time": "00:04:55", "text": "Opened a second terminal window and spun up a second agent for a to-do-list branch and worktree."},
+      {"time": "00:06:25", "text": "Capped parallelism at three agents (notes, to-do, calendar), citing personal cognitive load limits."},
+      {"time": "00:07:51", "text": "Reminded that any AI agent can answer git/branch/worktree questions when the user gets confused."},
+      {"time": "00:08:48", "text": "Ended with three agents staged in their respective worktrees, ready for feature commands next video."}
+    ],
+    "quotes": [
+      {"time": "00:07:46", "text": "Well, this is the solution. This is your solution right here — having multiple worktrees."},
+      {"time": "00:00:39", "text": "The terminal doesn't use up a ton of memory on your computer."},
+      {"time": "00:06:38", "text": "My brain — I have a smaller brain — can only comprehend three AI agents at the same time."}
+    ]
+  },
+  {
+    "key": "004_using-multiple-agents-to-make-changes",
+    "tldr": "Drove three parallel Claude Code agents in plan mode to add notes, calendar, and to-do features to the same project-management app, testing each on its own dev server and committing each to its branch.",
+    "highlights": [
+      {"time": "00:00:09", "text": "Prompted the notes agent in plan mode to add a rich-text notes section to the kanban app."},
+      {"time": "00:00:53", "text": "Switched to the calendar worktree and requested a calendar component with event support."},
+      {"time": "00:01:09", "text": "Sent the to-do agent a plan-mode prompt for a simple to-do tracker, then accepted all three plans."},
+      {"time": "00:01:44", "text": "Reminded that fresh agents have no context and must explore the codebase before coding."},
+      {"time": "00:02:48", "text": "Highlighted parallel workflow eliminates downtime and Twitter/TikTok distractions between turns."},
+      {"time": "00:04:12", "text": "Tested the notes feature, hit an error on click, pasted it back to Claude, and got a working slide-out editor."},
+      {"time": "00:05:01", "text": "Committed and pushed the notes changes to the notes branch as a backup checkpoint."},
+      {"time": "00:06:08", "text": "Verified the calendar UI worked, then committed and pushed the calendar branch."},
+      {"time": "00:07:05", "text": "Tested the to-do list on localhost:3005, confirmed animations, and pushed the to-do branch to GitHub."}
+    ],
+    "quotes": [
+      {"time": "00:05:18", "text": "Anytime you make any changes, you test them and they work — make sure to push your changes to the branch."},
+      {"time": "00:01:48", "text": "That agent doesn't have any context on your app or how it works."},
+      {"time": "00:03:06", "text": "You don't have those distractions. You can keep talking and keep working with different agents."}
+    ]
+  },
+  {
+    "key": "005_merging-all-your-changes",
+    "tldr": "Final step: merged all three feature branches (notes, calendar, to-do) into master one at a time using Claude Code, letting the AI auto-resolve merge conflicts. Skipped pull requests in favor of speed for solo developers.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Framed master as the single source of truth that Vercel deploys to live users."},
+      {"time": "00:00:43", "text": "Distinguished pull requests (best practice for teams) from direct AI merges (faster solo flow)."},
+      {"time": "00:01:57", "text": "Asked the notes agent to merge its branch into master and push, switching branches automatically."},
+      {"time": "00:02:42", "text": "Asked the calendar agent to merge next, which surfaced real merge conflicts with notes code."},
+      {"time": "00:03:11", "text": "Let Claude auto-resolve the conflict errors and complete the merge to master in seconds."},
+      {"time": "00:04:05", "text": "Merged the to-do branch last, again letting AI handle conflicts and push to master."},
+      {"time": "00:04:21", "text": "Ran the merged master branch with installed dependencies to verify all three features coexist."},
+      {"time": "00:05:09", "text": "Confirmed calendar, notes, and to-do all worked together in the unified master build."},
+      {"time": "00:05:21", "text": "Recapped the full workflow: branches, worktrees, parallel agents, AI merges, and rewindable history."}
+    ],
+    "quotes": [
+      {"time": "00:04:51", "text": "If this was before AI, literally that might have been an eight-hour exercise."},
+      {"time": "00:03:42", "text": "If you were a developer before AI, this is amazing because this is the type of thing that would take you hours and hours."},
+      {"time": "00:06:03", "text": "If you want to scale this up and have 100 agents going at the same time, you now can do it."}
+    ]
+  },
+  {
+    "key": "001_introduction-to-linear",
+    "tldr": "Alex introduces Linear as a project management tool he considers essential for vibe coding, especially with Claude Code and OpenClaw. He walks through the core building blocks (teams, issues, projects, views) and previews how the next videos will cover Claude Code and OpenClaw integrations that let agents create and complete tasks autonomously.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Pitched Linear as the best project management tool for vibe coders, Claude Code users, and OpenClaw users."},
+      {"time": "00:01:07", "text": "Announced this would be a multi-video series covering Linear basics, Claude Code integration, then OpenClaw."},
+      {"time": "00:01:34", "text": "Walked through the left sidebar showing Teams as the top-level container for big apps you build."},
+      {"time": "00:01:55", "text": "Explained Issues are tasks, bugs, and todos all rolled into one nomenclature inside Linear."},
+      {"time": "00:02:06", "text": "Defined Projects as groupings of related Issues, like an Onboarding project containing many onboarding tasks."},
+      {"time": "00:02:44", "text": "Showed the kanban issues view with backlog, todo, in-progress, done columns and assignment to teammates."},
+      {"time": "00:04:54", "text": "Revealed most of his current tasks were created automatically by Claude Code through the Linear integration."},
+      {"time": "00:05:03", "text": "Demonstrated assigning tasks to OpenClaw so the agent picks them up and writes the code itself."},
+      {"time": "00:05:27", "text": "Listed Linear advantages: organization, multitasking via agent integrations, and GitHub PR attachments."},
+      {"time": "00:06:23", "text": "Distinguished Mission Control for personal tasks vs Linear for hardcore product and business building."}
+    ],
+    "quotes": [
+      {"time": "00:00:30", "text": "This is the best project management tool out there."},
+      {"time": "00:05:08", "text": "It's like I have employees working for me in here, managing tasks with me, creating tasks for me."},
+      {"time": "00:06:13", "text": "If you are building anything, vibe coding, anything, starting a business, I think you need to be on Linear."}
+    ]
+  },
+  {
+    "key": "002_linear-advanced",
+    "tldr": "Alex follows up the intro with a deep dive into Linear's task-level details before tackling Claude Code integration. He stresses adding rich notes, priorities, labels, attachments, and PRDs to issues so AI agents like his OpenClaw 'Lola' can do high-quality work when assigned tasks.",
+    "highlights": [
+      {"time": "00:00:00", "text": "Reversed course on jumping straight to Claude Code, opting for a Linear deep-dive video first."},
+      {"time": "00:00:28", "text": "Stressed adding as many notes as possible to each issue so agents have rich context."},
+      {"time": "00:01:18", "text": "Demonstrated assigning a 'Fetch Vercel Preview URL' task to his OpenClaw agent named Lola."},
+      {"time": "00:02:11", "text": "Recommended setting priorities so automated workflows can pick the highest priority task next."},
+      {"time": "00:02:38", "text": "Explained labels enable filtered views like agent-only or bug-only boards down the road."},
+      {"time": "00:02:53", "text": "Recommended Projects represent app sections (onboarding, payments, marketing) with target end dates."},
+      {"time": "00:03:18", "text": "Pointed to the activity feed where AI agents leave comments and replies as they work tasks."},
+      {"time": "00:03:48", "text": "Suggested attaching PRDs, screenshots, demo videos, and other documents to issues for richer context."},
+      {"time": "00:04:09", "text": "Highlighted GitHub integration showing branches and pull requests directly inside the issue."},
+      {"time": "00:04:58", "text": "Mentioned Slack integrations exist but admitted he doesn't personally use Slack."}
+    ],
+    "quotes": [
+      {"time": "00:01:43", "text": "Lola will be able to do better when she gets this task — she'll be able to code it out much better."},
+      {"time": "00:02:25", "text": "It's going to look for the highest priority tasks."},
+      {"time": "00:05:25", "text": "Make sure you fill out these details — when we go to the more advanced workflows, your agents will be able to pick up all these details and do a lot better work."}
+    ]
+  },
+  {
+    "key": "003_linear-integrated-with-claude-code",
+    "tldr": "Alex shows how to wire Linear into Claude Code via the desktop app's Connectors panel, alongside GitHub and Vercel. The killer move is feeding Claude Code your PRDs and vision docs and asking it to populate the entire Linear roadmap with issues, projects, and milestones automatically, turning Linear into a second brain for new sessions.",
+    "highlights": [
+      {"time": "00:00:06", "text": "Recommended the Claude Code desktop app for its connectors UI over the CLI for Linear setup."},
+      {"time": "00:00:26", "text": "Showed connecting Linear, GitHub, and optionally Vercel through Settings > Connectors."},
+      {"time": "00:01:13", "text": "Required users have a PRD or vision document in their project folder before kicking off the build."},
+      {"time": "00:01:32", "text": "Showed his Henry Intelligent Machines folder containing Hymns Vision Doc, V1 PRD, and Current State docs."},
+      {"time": "00:02:06", "text": "Gave the prompt: 'take a look at my Linear and file the roadmap as Linear issues into existing or new projects.'"},
+      {"time": "00:02:42", "text": "Claude Code created issues with priorities, titles, descriptions, and assigned them to projects automatically."},
+      {"time": "00:03:13", "text": "Built Sprint milestones identifying the most important issues to work on first."},
+      {"time": "00:03:34", "text": "Established the new workflow: find next high-urgency issue, build, test, approve, repeat."},
+      {"time": "00:05:02", "text": "Demonstrated Claude Code automatically updating issue statuses from backlog through to done as work progressed."}
+    ],
+    "quotes": [
+      {"time": "00:02:54", "text": "It's actually going to work as a good second brain for your Claude Code."},
+      {"time": "00:03:34", "text": "Find the next high-urgency issue and build it out. Find the next high-urgency issue and build it out."},
+      {"time": "00:04:55", "text": "Now your Claude Code will be able to go in, see all your issues, see where the highest urgency is."}
+    ]
+  },
+  {
+    "key": "004_linear-and-openclaw-integration",
+    "tldr": "The next-level setup: spin up a separate Linear account for an OpenClaw agent, generate an API key, and have OpenClaw poll Linear every five minutes for assigned issues. When triggered it writes code on its own branch and opens a PR. Alex also recommends having the agent post a plan in the issue comments before coding to build trust.",
+    "highlights": [
+      {"time": "00:00:11", "text": "Framed the OpenClaw-Linear integration as something done by 0.0001% of people."},
+      {"time": "00:00:46", "text": "Step one: invite an alternate email to Linear to create a dedicated agent account."},
+      {"time": "00:01:14", "text": "Generated a Linear API key under Settings > API > Security and Access in the agent account."},
+      {"time": "00:01:56", "text": "Prompted OpenClaw with: 'I want you to be my 24/7 AI engineer. Please integrate with my Linear account.'"},
+      {"time": "00:02:42", "text": "Recommended polling every five minutes via a script rather than cron jobs to save tokens."},
+      {"time": "00:03:18", "text": "Suggested reverse-prompting the agent for its preferred implementation rather than dictating one."},
+      {"time": "00:03:53", "text": "Trust-building tip: have the agent post its plan in the issue comments before writing code."},
+      {"time": "00:04:36", "text": "Required GitHub access so the agent can create branches and pull requests for each issue."},
+      {"time": "00:04:57", "text": "Outlined his daily workflow: drive with Claude Code, hand off parallel tasks to OpenClaw via Linear assignment."}
+    ],
+    "quotes": [
+      {"time": "00:02:01", "text": "I want to plug you in and build a system where you're my 24/7 AI engineer."},
+      {"time": "00:02:53", "text": "Polling and cron jobs are very different things."},
+      {"time": "00:06:13", "text": "You're going to be a vibe coding machine."}
+    ]
+  },
+  {
+    "key": "001_claude-code-opus-47-to-build-him",
+    "tldr": "Alex's first live vibe-coding session: a roughly two-hour build of Henry Intelligent Machines using Claude Opus 4.7 (released that same day). He works through publishing-system bugs, gets a managed agent to autonomously build and deploy a landing page to Vercel, and answers community questions on his pre-seed raise, hardware setup, hiring plans, and why he's avoiding head-on competition with Anthropic.",
+    "highlights": [
+      {"time": "00:00:26", "text": "Decided no audio Q&A during sessions because every prior Q&A had stretched on indefinitely."},
+      {"time": "00:02:42", "text": "Announced Claude Opus 4.7 had dropped that same day and he'd been testing it for an hour."},
+      {"time": "00:04:08", "text": "Set the stage: building Henry Intelligent Machines, a venture-backed autonomous economic engine."},
+      {"time": "00:05:30", "text": "Pivoted architecture from Gumroad-style API integrations to owning the full vertical stack on Vercel."},
+      {"time": "00:07:09", "text": "Shared the pre-seed story: half a million from Alex Wissner-Gross right after a Moonshots podcast taping."},
+      {"time": "00:08:29", "text": "Outlined a one-user-at-a-time rollout plan, scaling slowly to 10, then hundreds, then thousands."},
+      {"time": "00:14:33", "text": "Recommended bypass-permissions mode in the desktop app over ask or accept-edits, despite the risk."},
+      {"time": "00:18:52", "text": "Hit a managed-agent failure on the first venture launch and started screenshotting errors back to Claude."},
+      {"time": "00:30:31", "text": "Stated his strategy: don't build vibe-coding tools because Anthropic will copy and outdo them."},
+      {"time": "00:33:01", "text": "Pushed audience toward moonshot ideas because few people are running those races."},
+      {"time": "01:05:57", "text": "Discovered a bug where one venture spawned multiple managed agents simultaneously."},
+      {"time": "01:11:18", "text": "Audience member Hud unmuted with a positive sales-of-tool story; Alex thanked him but reaffirmed no-mic policy."},
+      {"time": "01:21:55", "text": "Managed agent successfully built a landing page; Alex called it 'sick' though imperfect."},
+      {"time": "01:27:54", "text": "Vercel bot auto-deployed the agent's PR, putting the landing page live on the internet end-to-end."},
+      {"time": "01:30:01", "text": "Clarified Henry Intelligent Machines uses managed agents because it's a web app, not a local tool like OpenClaw."},
+      {"time": "01:42:38", "text": "Showed off a new Grovemade notepad and started jotting ad-strategy notes mid-session."},
+      {"time": "01:43:42", "text": "Dispatched a second managed agent for an Open-Cloud Dev Team Replacement Playbook venture."},
+      {"time": "02:01:02", "text": "Wrapped early for a doctor's appointment, asking for feedback and committing to weekly sessions."}
+    ],
+    "quotes": [
+      {"time": "00:34:35", "text": "If you want that, you got to be building a moonshot idea — something that's barely possible."},
+      {"time": "00:30:59", "text": "The moment you build a successful vibe coding tool, Anthropic will just copy it and make a significantly better version."},
+      {"time": "01:22:54", "text": "This is a win. The template approach is validated."},
+      {"time": "01:43:51", "text": "It's amazing to think about just how impossible this would be without Claude Code."},
+      {"time": "01:44:21", "text": "Just getting this to spin up managed agents would have took me a full day. This took me two minutes."}
+    ]
+  },
+  {
+    "key": "002_furthering-the-vision-and-doing-some-design-work",
+    "tldr": "Second live session focused on testing newly-built analytics in Henry, then pivoting to brand and design work. Alex juggles Claude Code (top right), Claude Design (center), and ChatGPT 5.5 / 5.5 Pro (bottom right) to develop the Henry brand world, then uses 5.5 Pro to plan a major new feature: Henry autonomously building full SaaS apps for users.",
+    "highlights": [
+      {"time": "00:00:11", "text": "Reiterated no-mics rule and pointed verbal questioners to the Friday bootcamp Q&A."},
+      {"time": "00:03:08", "text": "Hit 'Claude reached its tool use limit for this turn' for the first time ever and laughed it off."},
+      {"time": "00:09:51", "text": "Audience member Alex praised Linear: 'changed my workflow for the better by 100x.'"},
+      {"time": "00:10:57", "text": "Shared CLI-vs-desktop test results: 7 of 10 the desktop app produced equal or better code."},
+      {"time": "00:12:00", "text": "Reviewed his recently-completed analytics work and asked Claude what to build next."},
+      {"time": "00:15:48", "text": "Set up his workflow screen: Claude Code top right, ChatGPT bottom right, Henry app on the left."},
+      {"time": "00:20:13", "text": "Tip: ask Claude to test things itself rather than letting it default to giving manual test instructions."},
+      {"time": "00:27:30", "text": "Declared OpenClaw with Opus 4.7 the unbiased GOAT for coding agent tasks despite ChatGPT testing."},
+      {"time": "00:39:05", "text": "Got Claude to one-shot build a HubSpot media kit in a single prompt that would've taken 5 hours."},
+      {"time": "00:43:38", "text": "Refused to switch OpenClaw to GPT-5.5 manually, saying hacky model swaps break 100% of the time."},
+      {"time": "00:48:27", "text": "Complained ChatGPT was being too chatty and contemplated keeping the verbose 'intended experience' anyway."},
+      {"time": "01:04:42", "text": "Decided to use Clerk for authentication, citing free tier and existing Creator Buddy experience."},
+      {"time": "01:13:18", "text": "Audience workshopped a logo with an octopus; Alex declared they'd 'workshop the octopus.'"},
+      {"time": "01:26:15", "text": "Spun up GPT-5.5 Pro to plan the major new feature of Henry building full SaaS applications autonomously."},
+      {"time": "01:33:05", "text": "Marveled that 5.5 Pro responded in four minutes versus the usual 15 for 5.4 Pro."},
+      {"time": "01:39:42", "text": "Validated his thinking through ChatGPT first, getting pushback to start with micro-SaaS generators not full apps."},
+      {"time": "01:50:33", "text": "Had GPT-5.5 Pro write the SaaS-builder plan into a doc to hand off to Claude Code as a second-agent review."},
+      {"time": "01:53:06", "text": "Wrapped after two hours with a meeting in one minute, promoting Friday bootcamp for verbal Q&A."}
+    ],
+    "quotes": [
+      {"time": "00:07:21", "text": "It'll have context immediately because it can look at your Linear."},
+      {"time": "00:20:50", "text": "Claude can actually handle a lot of testing by itself."},
+      {"time": "01:16:30", "text": "If you get distracted scrolling X or whatever, you lose out on a lot of the efficiency gains from AI."},
+      {"time": "01:46:09", "text": "AI is the best at writing prompts for other AIs."},
+      {"time": "01:51:22", "text": "Always having a second agent there when you're doing anything — you can bounce ideas back and forth."}
+    ]
+  }
+]

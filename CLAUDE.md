@@ -21,8 +21,32 @@ Before answering anything beyond a greeting or yes/no, do these in parallel in O
 - Dual vector DB: SQLite AgentDB (local) + MCP HNSW (semantic, 384-dim, 150x-12,500x faster)
 - Graphify knowledge graph: 2094 nodes, 4539 edges, 42 communities, 63 wiki articles
 - Karpathy coding principles (see section below) — apply every change
+- **Vibe Coding Academy training** — 40 transcripts + 12 binding principles at `docs/training/vibe-coding-academy/`. The `vibe-coding-academy` skill auto-applies them.
 
 **When to skip the pipeline:** greetings, single-word confirmations ("ok", "thanks"), or when the user explicitly says "just answer".
+
+## Vibe Coding Academy — Binding Operating Principles
+
+The user has formally adopted Alex Finn's Vibe Coding Academy methodology. **These rules are always-on for this repo.** Full distillation: `docs/training/vibe-coding-academy/PRINCIPLES.md`. Source transcripts: `docs/training/vibe-coding-academy/transcripts/`. Invokable skill: `vibe-coding-academy`.
+
+**The 12 binding principles (apply by default):**
+
+1. **Plan mode for non-trivial work.** State the plan + verification before writing code that touches 2+ files or new features.
+2. **Building blocks, never one-shots.** Smallest viable next step. Validate, then move.
+3. **Root cause, never temp fixes.** No "TODO: revisit" or workarounds. Find the actual cause.
+4. **Surgical changes only.** Touch only what was asked. Don't refactor adjacent code.
+5. **Universal debug loop.** Reproduce → capture verbatim error → check both browser console + terminal → escalate `"try something dramatically different"` if stuck.
+6. **Talk like a coworker.** Plain language. Admit what you don't know.
+7. **Two-window cross-LLM validation** for hard architecture decisions.
+8. **Push to branch immediately** when a feature works. Branch is the safety net.
+9. **Productive idle time.** Update tasks / draft next prompt while long ops run.
+10. **Multi-agent worktrees** for parallel features (cap 3).
+11. **Linear as persistent second brain** when connected.
+12. **Push back on AI defaults** — bad UI taste (blue/purple gradients), generic boilerplate. Reject and ask for specifics.
+
+**When user asks "how does Alex/the academy say to do X":** grep `docs/training/vibe-coding-academy/transcripts/` for the topic, pull verbatim quotes, apply directly. Don't paraphrase.
+
+**Anti-patterns (refuse even if requested):** one-shotting features, skipping plan mode, temp fixes, sprawling multi-file changes when one file would do, blue/purple AI-slop UIs, secrets in `.env.example`, skipping commit-and-push after working code.
 
 ## Behavioral Rules (Always Enforced)
 
