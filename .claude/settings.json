@@ -32,7 +32,8 @@
       "Bash(npx:*)",
       "mcp__claude-flow__*",
       "mcp__ruv-swarm__*",
-      "mcp__flow-nexus__*"
+      "mcp__flow-nexus__*",
+      "mcp__apify__*"
     ],
     "deny": [
       "Read(./.env)",
@@ -376,6 +377,13 @@
         "mcp",
         "start"
       ]
+    },
+    "apify": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/apify-mcp-server"],
+      "env": {
+        "APIFY_TOKEN": "${APIFY_TOKEN}"
+      }
     }
   },
   "enabledMcpjsonServers": [

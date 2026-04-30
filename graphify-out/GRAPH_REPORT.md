@@ -281,4 +281,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `ReflexionMemory`, `SkillLibrary`, `CausalMemoryGraph` to the rest of the system?**
   _33 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.02 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.02 - nodes in this community are weakly interconnected._yes p
